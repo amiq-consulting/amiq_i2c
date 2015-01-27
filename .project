@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>amiq_i2c</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ro.amiq.dvt.MixedLangBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ro.amiq.edt.enature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>DVT Auto-Linked</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_all_files.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_all_files.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_api.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_api.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_imp.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_imp.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_internal_api.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_internal_api.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_macro.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_macro.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_map_imp.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_map_imp.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_mem_api.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_mem_api.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_mem_imp.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_mem_imp.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_mem_obj.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_mem_obj.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_mem_vt.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_mem_vt.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_ml.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_ml.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_msg_config.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_msg_config.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_predefined_seq.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_predefined_seq.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_reg_backdoor_imp.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_reg_backdoor_imp.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_reg_imp.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_reg_imp.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_reg_policies_imp.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_reg_policies_imp.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_sequence.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_sequence.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_sequence_h.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_sequence_h.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_sets.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_sets.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_static_info_macro.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_static_info_macro.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_top.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_top.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_types.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_types.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_uvm_api.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_uvm_api.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_vt.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_vt.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_vt_page_slice_patch.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_ad/e/vr_ad_vt_page_slice_patch.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set32_hilevel.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set32_hilevel.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set32_lowlevel.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set32_lowlevel.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set32_mem.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set32_mem.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set32_nodes.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set32_nodes.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set32_rnd.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set32_rnd.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set_inf_hilevel.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set_inf_hilevel.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set_inf_lowlevel.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set_inf_lowlevel.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set_inf_mem.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set_inf_mem.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set_inf_nodes.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set_inf_nodes.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set_inf_rnd.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_set_inf_rnd.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_sets_interface.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_sets_interface.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_sets_internal_proto.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_sets_internal_proto.e</locationURI>
+		</link>
+		<link>
+			<name>DVT Auto-Linked/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_sets_top.e</name>
+			<type>1</type>
+			<locationURI>DVT_PATH/apps/cadence/INCISIV_14.10.001/specman/uvm/uvm_lib/vr_sets/e/vr_sets_top.e</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

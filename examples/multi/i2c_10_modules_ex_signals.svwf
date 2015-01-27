@@ -1,0 +1,88 @@
+waveform add -signals [subst {
+	{[format {amiq_i2c_ex_tb.clock}]}
+	}]
+
+if { [group find -match exact -name {I2C BUS}] == {} } {
+  group new -name {I2C BUS} -overlay 0
+group insert -using {I2C BUS} amiq_i2c_ex_tb.scl amiq_i2c_ex_tb.sda
+}
+
+set groupId0 [waveform add -groups {{I2C BUS}}]
+if { [group find -match exact -name {Module 0}] == {} } {
+  group new -name {Module 0} -overlay 0
+group insert -using {Module 0} amiq_i2c_ex_tb.scl_00_o amiq_i2c_ex_tb.scl_00_o_en amiq_i2c_ex_tb.sda_00_o amiq_i2c_ex_tb.sda_00_o_en
+}
+
+set groupId0 [waveform add -groups {{Module 0}}]
+if { [group find -match exact -name {Module 1}] == {} } {
+  group new -name {Module 1} -overlay 0
+group insert -using {Module 1} amiq_i2c_ex_tb.scl_01_o amiq_i2c_ex_tb.scl_01_o_en amiq_i2c_ex_tb.sda_01_o amiq_i2c_ex_tb.sda_01_o_en
+}
+
+set groupId0 [waveform add -groups {{Module 1}}]
+if { [group find -match exact -name {Module 2}] == {} } {
+  group new -name {Module 2} -overlay 0
+group insert -using {Module 2} amiq_i2c_ex_tb.scl_02_o amiq_i2c_ex_tb.scl_02_o_en amiq_i2c_ex_tb.sda_02_o amiq_i2c_ex_tb.sda_02_o_en
+}
+
+set groupId0 [waveform add -groups {{Module 2}}]
+if { [group find -match exact -name {Module 3}] == {} } {
+  group new -name {Module 3} -overlay 0
+group insert -using {Module 3} amiq_i2c_ex_tb.scl_03_o amiq_i2c_ex_tb.scl_03_o_en amiq_i2c_ex_tb.sda_03_o amiq_i2c_ex_tb.sda_03_o_en
+}
+
+set groupId0 [waveform add -groups {{Module 3}}]
+waveform hierarchy collapse $groupId0
+if { [group find -match exact -name {Module 4}] == {} } {
+  group new -name {Module 4} -overlay 0
+group insert -using {Module 4} amiq_i2c_ex_tb.scl_04_o amiq_i2c_ex_tb.scl_04_o_en amiq_i2c_ex_tb.sda_04_o amiq_i2c_ex_tb.sda_04_o_en
+}
+
+set groupId0 [waveform add -groups {{Module 4}}]
+waveform hierarchy collapse $groupId0
+if { [group find -match exact -name {Module 5}] == {} } {
+  group new -name {Module 5} -overlay 0
+group insert -using {Module 5} amiq_i2c_ex_tb.scl_05_o amiq_i2c_ex_tb.scl_05_o_en amiq_i2c_ex_tb.sda_05_o amiq_i2c_ex_tb.sda_05_o_en
+}
+
+set groupId0 [waveform add -groups {{Module 5}}]
+waveform hierarchy collapse $groupId0
+if { [group find -match exact -name {Module 6}] == {} } {
+  group new -name {Module 6} -overlay 0
+group insert -using {Module 6} amiq_i2c_ex_tb.scl_06_o amiq_i2c_ex_tb.scl_06_o_en amiq_i2c_ex_tb.sda_06_o amiq_i2c_ex_tb.sda_06_o_en
+}
+
+set groupId0 [waveform add -groups {{Module 6}}]
+waveform hierarchy collapse $groupId0
+if { [group find -match exact -name {Module 7}] == {} } {
+  group new -name {Module 7} -overlay 0
+group insert -using {Module 7} amiq_i2c_ex_tb.scl_07_o amiq_i2c_ex_tb.scl_07_o_en amiq_i2c_ex_tb.sda_07_o amiq_i2c_ex_tb.sda_07_o_en
+}
+
+set groupId0 [waveform add -groups {{Module 7}}]
+waveform hierarchy collapse $groupId0
+if { [group find -match exact -name {Module 8}] == {} } {
+  group new -name {Module 8} -overlay 0
+group insert -using {Module 8} amiq_i2c_ex_tb.scl_08_o amiq_i2c_ex_tb.scl_08_o_en amiq_i2c_ex_tb.sda_08_o amiq_i2c_ex_tb.sda_08_o_en
+}
+
+set groupId0 [waveform add -groups {{Module 8}}]
+waveform hierarchy collapse $groupId0
+if { [group find -match exact -name {Module 9}] == {} } {
+  group new -name {Module 9} -overlay 0
+group insert -using {Module 9} amiq_i2c_ex_tb.scl_09_o amiq_i2c_ex_tb.scl_09_o_en amiq_i2c_ex_tb.sda_09_o amiq_i2c_ex_tb.sda_09_o_en
+}
+
+set groupId0 [waveform add -groups {{Module 9}}]
+waveform hierarchy collapse $groupId0
+waveform add -signals [subst {
+	{[format {amiq_i2c_ex_tb.reset_n}]}
+	}]
+
+if { [group find -match exact -name junk] == {} } {
+  group new -name junk -overlay 0
+group insert -using junk amiq_i2c_ex_tb.sdaw amiq_i2c_ex_tb.sclw
+}
+
+set groupId0 [waveform add -groups junk]
+waveform hierarchy collapse $groupId0

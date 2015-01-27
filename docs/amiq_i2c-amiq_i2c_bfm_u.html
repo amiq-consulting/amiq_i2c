@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>amiq_i2c
+API Specification</title>
+
+	<meta name="author" content="cristian.slav">
+	<meta name="description" content="amiq_i2c API Specification">
+	<meta name="generator" content="Specador. Copyright (C) 2005-2014 AMIQ EDA ">
+	<meta name="keywords" content="e Language, HTML Documentation, Specador, AMIQ EDA, amiq_i2c API Specification">
+
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/content.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container-fluid">
+<h2 class="page-element-name">Unit <a  href="summary-amiq_i2c.html">amiq_i2c</a> :: amiq_i2c_bfm_u</h2>
+
+
+	<br>
+	<div class="btn-group">
+				<button data-scroll="#subtypes" type="button" class="btn btn-default">Explicit When Sub-Types <span class="badge">2</span></button>
+		<button data-scroll="#fields" type="button" class="btn btn-default">Fields <span class="badge">7</span></button>
+		<button data-scroll="#events" type="button" class="btn btn-default">Events <span class="badge">1</span></button>
+		<button data-scroll="#methods" type="button" class="btn btn-default">Methods <span class="badge">1</span></button>
+		<button data-scroll="#tcms" type="button" class="btn btn-default">TCMs <span class="badge">12</span></button>
+		<button data-scroll="#inheritance" type="button" class="btn btn-default">Inheritance Diagram</button>
+		<button data-scroll="#collaboration" type="button" class="btn btn-default">Collaboration Diagram</button>
+		<button data-scroll="#direct_associations" type="button" class="btn btn-default">Direct Associations Diagram</button>
+
+	</div>
+	<br>
+
+<br>
+
+	<div class="panel panel-default">
+
+		<div class="panel-heading" data-toggle="collapse"
+			data-target="#collapse_class_hierarchy">
+			<h4 class="panel-title">
+				Struct Hierarchy <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+
+		<div id="collapse_class_hierarchy" class="panel-collapse collapse in">
+			<div class="panel-body">
+				<ul class="class-hierarchy">
+							<li>	 		base_struct
+
+</li>
+							<li>	 		any_struct
+
+</li>
+							<li>	 		any_unit
+
+</li>
+							<li>	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_any_unit_u.html">amiq_i2c_any_unit_u</a>
+
+</li>
+							<li>	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_any_agent_unit_u.html">amiq_i2c_any_agent_unit_u</a>
+
+</li>
+							<li>amiq_i2c_bfm_u</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<pre class="comment">BFM unit</pre>
+
+<!-- ========= START Explicit Sub Types ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#subtypes">
+			<h4 class="panel-title">
+				Explicit When Sub-Types <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="subtypes" class="list-group panel-collapse collapse in">
+				
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="subtype_MASTER"></a><b>MASTER</b>
+					</span>
+					<pre class="comment">Master BFM Master BFM unit</pre>
+				</li>
+				
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="subtype_SLAVE"></a><b>SLAVE</b>
+					</span>
+					<pre class="comment">Slave BFM Slave BFM unit</pre>
+				</li>
+		</ul>
+	</div>
+<!-- ========= END Explicit Sub Types ======= -->
+
+<!-- ========= START Fields ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#fields">
+			<h4 class="panel-title">
+				Fields <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="fields" class="list-group panel-collapse collapse in">
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>! curr_item</b>
+			<a name="field_curr_item"></a> : <a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+		</span>
+		<pre class="comment">Current item to be driven</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>ptr_agent_config</b>
+			<a name="field_ptr_agent_config"></a> : <a href="amiq_i2c-amiq_i2c_agent_config_u.html">amiq_i2c_agent_config_u</a>
+		</span>
+		<pre class="comment">Pointer to agent configuration instance
+Propagated from enclosing agent.
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>ptr_agent_mon</b>
+			<a name="field_ptr_agent_mon"></a> : <a href="amiq_i2c-amiq_i2c_agent_monitor_u.html">amiq_i2c_agent_monitor_u</a>
+		</span>
+		<pre class="comment">Pointer to agent monitor instance
+Propagated from enclosing agent.
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>ptr_agent_smp</b>
+			<a name="field_ptr_agent_smp"></a> : <a href="amiq_i2c-amiq_i2c_agent_smp_u.html">amiq_i2c_agent_smp_u</a>
+		</span>
+		<pre class="comment">Pointer to agent smp instance
+Propagated from enclosing agent.
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>ptr_bus_mon</b>
+			<a name="field_ptr_bus_mon"></a> : <a href="amiq_i2c-amiq_i2c_bus_monitor_u.html">amiq_i2c_bus_monitor_u</a>
+		</span>
+		<pre class="comment">Pointer to bus monitor instance
+Propagated from enclosing env via the agent.
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>ptr_synch</b>
+			<a name="field_ptr_synch"></a> : <a href="amiq_i2c-amiq_i2c_synchronizer_u.html">amiq_i2c_synchronizer_u</a>
+		</span>
+		<pre class="comment">Pointer to synchronizer unit
+Propagated from enclosing env via the agent.
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>short_name</b>
+			<a name="field_short_name"></a> : string
+		</span>
+		<pre class="comment">String to print in messagef() methods</pre>
+	</li>
+
+
+
+	<li class="list-group-item">
+		<span class="aspect">MASTER</span>
+		<span class="signature">
+			<b>driver</b>
+			<a name="field_driver"></a> : <a href="amiq_i2c-amiq_i2c_m_driver_u.html">amiq_i2c_m_driver_u</a>
+		</span>
+		<pre class="comment">Pointer to driver instance</pre>
+	</li>
+
+
+	<li class="list-group-item">
+		<span class="aspect">SLAVE</span>
+		<span class="signature">
+			<b>driver</b>
+			<a name="field_driver"></a> : <a href="amiq_i2c-amiq_i2c_s_driver_u.html">amiq_i2c_s_driver_u</a>
+		</span>
+		<pre class="comment">Pointer to driver instance</pre>
+	</li>
+			
+		</ul>
+	</div>
+<!-- ========= END Fields ======= -->
+
+<!-- ========= START Ports ======= -->
+<!-- ========= END Ports ======= -->
+
+<!-- ========= START Events ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#events">
+			<h4 class="panel-title">
+				Events <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="events" class="list-group panel-collapse collapse in">
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>clk_r_e</b>
+			<a name="event_clk_r_e"></a>
+		</span>
+		<pre class="comment">Clock rising event</pre>
+	</li>
+
+
+
+
+
+	<li class="list-group-item">
+		<span class="aspect">SLAVE</span>
+		<span class="signature">
+			<b>computed_cs_decode_phase</b>
+			<a name="event_computed_cs_decode_phase"></a>
+		</span>
+		<pre class="comment">Sync event: if the slave does not receive an item from the sequence
+it will wait for the bus monitor to compute the current transfer phase before generating a default item
+</pre>
+	</li>
+	<li class="list-group-item">
+		<span class="aspect">SLAVE</span>
+		<span class="signature">
+			<b>drive_s_items_s</b>
+			<a name="event_drive_s_items_s"></a>
+		</span>
+		<pre class="comment">Sync event: a slave item will be driven only after the previous driven item was processed by the bus monitor</pre>
+	</li>
+	<li class="list-group-item">
+		<span class="aspect">SLAVE</span>
+		<span class="signature">
+			<b>scl_f_e</b>
+			<a name="event_scl_f_e"></a>
+		</span>
+		<pre class="comment">Serial clock falling edge</pre>
+	</li>
+			
+		</ul>
+	</div>
+
+	
+<!-- ========= END Events ======= -->
+
+<!-- ========= START Methods ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#methods">
+			<h4 class="panel-title">
+				Methods <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="methods" class="list-group panel-collapse collapse in">
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>skip_drive_sda</b>
+				()
+			<a name="method_skip_drive_sda"></a> : bool
+		</span>
+		<pre class="comment">Method for determining if SDA line should not be driven, for example when losing arbitration</pre>
+	</li>
+
+
+
+
+
+	<li class="list-group-item">
+		<span class="aspect">SLAVE</span>
+		<span class="signature">
+			<b>gen_default_item_for_slave_m</b>
+				()
+			<a name="method_gen_default_item_for_slave_m"></a> : <a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+		</span>
+		<pre class="comment">If the sequence does not provide an item for the slave driver a default one will be generated</pre>
+	</li>
+			
+		</ul>
+	</div>
+
+	
+<!-- ========= END Methods ======= -->
+
+<!-- ========= START TCM ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#tcms">
+			<h4 class="panel-title">
+				TCMs <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="tcms" class="list-group panel-collapse collapse in">
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>drive_item_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_drive_item_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM for driving an I2C item<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>drive_item_with_hooks_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_drive_item_with_hooks_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM for calling pre and post hooks of s_drive_item_tcm<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>drive_scl_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_drive_scl_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM for driving SCL line<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>drive_scl_with_hooks_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_drive_scl_with_hooks_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM for calling pre and post hooks of drive_scl_tcm<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>drive_sda_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_drive_sda_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM for driving SDA line<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>drive_sda_with_hooks_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_drive_sda_with_hooks_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM for calling pre and post hooks of drive_sda_tcm<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>post_drive_item_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_post_drive_item_tcm"></a> : void
+		</span>
+		<pre class="comment">Hook TCM called immediately after s_drive_item_tcm is called<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>post_drive_scl_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_post_drive_scl_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM for user to use as a hook immediately after drive_scl_tcm is called<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>post_drive_sda_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_post_drive_sda_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM for user to use as a hook immediately after drive_sda_tcm is called<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>pre_drive_item_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_pre_drive_item_tcm"></a> : void
+		</span>
+		<pre class="comment">Hook TCM called just before s_drive_item_tcm is called<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>pre_drive_scl_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_pre_drive_scl_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM for user to use as a hook just before drive_scl_tcm is called<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>pre_drive_sda_tcm</b>
+				(			<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+item_to_drive
+)
+			<a name="tcm_pre_drive_sda_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM for user to use as a hook just before drive_sda_tcm is called<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>item_to_drive</b> - current item to drive<br></pre>
+	</li>
+
+
+
+	<li class="list-group-item">
+		<span class="aspect">MASTER</span>
+		<span class="signature">
+			<b>execute_m_items_tcm</b>
+				()
+			<a name="tcm_execute_m_items_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM which executes items from driver</pre>
+	</li>
+
+
+	<li class="list-group-item">
+		<span class="aspect">SLAVE</span>
+		<span class="signature">
+			<b>execute_s_items_tcm</b>
+				()
+			<a name="tcm_execute_s_items_tcm"></a> : void
+		</span>
+		<pre class="comment">TCM which executes items from driver</pre>
+	</li>
+			
+		</ul>
+	</div>
+
+	
+<!-- ========= END TCM ======= -->
+
+<!-- ========= START Diagrams ======= -->
+
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#inheritance">
+			<h4 class="panel-title">
+				Inheritance Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="inheritance" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_bfm_u_inheritance.png" border="0" usemap="#_inheritance">
+			<map name="_inheritance"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_bfm_u.html"  alt="" coords="1014,43,1170,74"><area shape="poly" id="edge1"  alt="" coords="1108,43,1111,35,1110,29,1103,25,1092,23,1079,25,1073,33,1069,29,1076,21,1092,17,1106,20,1114,26,1117,35,1113,45"><area shape="rect" id="node4" href="amiq_i2c-amiq_i2c_any_agent_unit_u.html"  alt="" coords="670,43,933,74"><area shape="poly" id="edge2"  alt="" coords="1014,61,947,61,947,56,1014,56"><area shape="rect" id="node2" href="amiq_i2c-amiq_i2c_bfm_u.html"  alt="" coords="1251,7,1475,38"><area shape="poly" id="edge6"  alt="" coords="1251,19,1195,24,1138,41,1136,36,1194,19,1250,13"><area shape="poly" id="edge8"  alt="" coords="1252,40,1184,49,1183,44,1252,35"><area shape="rect" id="node3" href="amiq_i2c-amiq_i2c_bfm_u.html"  alt="" coords="1255,78,1470,109"><area shape="poly" id="edge7"  alt="" coords="1255,88,1194,81,1176,78,1177,73,1195,76,1255,83"><area shape="poly" id="edge9"  alt="" coords="1255,110,1194,105,1161,95,1130,82,1132,77,1163,90,1195,100,1255,105"><area shape="rect" id="node5" href="amiq_i2c-amiq_i2c_any_unit_u.html"  alt="" coords="385,43,589,74"><area shape="poly" id="edge3"  alt="" coords="670,61,602,61,602,56,670,56"><area shape="rect" id="node6"  alt="" coords="205,43,304,74"><area shape="poly" id="edge4"  alt="" coords="384,61,318,61,318,56,384,56"><area shape="rect" id="node7"  alt="" coords="6,43,125,74"><area shape="poly" id="edge5"  alt="" coords="205,61,139,61,139,56,205,56">
+			</map>
+		</ul>
+	</div>
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#collaboration">
+			<h4 class="panel-title">
+				Collaboration Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="collaboration" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_bfm_u_collaboration.png" border="0" usemap="#_collaboration">
+			<map name="_collaboration"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_bfm_u.html"  alt="" coords="1679,846,1835,877"><area shape="poly" id="edge1"  alt="" coords="1835,867,1851,864,1856,861,1847,857,1850,853,1861,861,1853,869,1836,872"><area shape="rect" id="node4" href="amiq_i2c-amiq_i2c_any_agent_unit_u.html"  alt="" coords="1535,323,1798,354"><area shape="poly" id="edge2"  alt="" coords="1679,863,1544,863,1383,858,1230,846,1167,836,1120,824,1085,807,1058,788,1038,764,1025,738,1015,708,1009,675,999,598,998,562,1006,532,1022,508,1044,489,1072,473,1103,459,1174,432,1233,416,1281,413,1330,414,1392,408,1508,382,1609,355,1610,360,1509,387,1392,413,1331,419,1281,419,1234,421,1175,437,1105,464,1074,478,1047,493,1026,512,1011,534,1003,562,1004,597,1014,674,1020,706,1030,736,1043,761,1062,784,1088,803,1122,819,1169,831,1230,840,1383,852,1544,857,1679,858"><area shape="rect" id="node8" href="amiq_i2c-amiq_i2c_item_s.html"  alt="" coords="2874,323,3041,354"><area shape="poly" id="edge56"  alt="" coords="1835,855,1987,844,2074,834,2161,819,2261,796,2346,773,2418,748,2485,722,2621,660,2796,582,2936,524,3073,465,3079,450,3078,436,3072,422,3062,408,3032,382,2997,362,3000,357,3035,378,3066,404,3077,419,3083,435,3084,451,3077,469,2938,529,2798,586,2623,665,2487,727,2420,753,2347,778,2263,801,2162,824,2075,839,1987,849,1836,860"><area shape="rect" id="node12" href="amiq_i2c-amiq_i2c_agent_monitor_u.html"  alt="" coords="1461,622,1713,653"><area shape="poly" id="edge63"  alt="" coords="1740,848,1703,813,1662,767,1625,714,1598,666,1602,663,1630,711,1666,764,1707,809,1744,845"><area shape="rect" id="node13" href="amiq_i2c-amiq_i2c_agent_config_u.html"  alt="" coords="1625,529,1868,559"><area shape="poly" id="edge93"  alt="" coords="1835,846,1972,818,2045,797,2114,771,2169,741,2190,724,2205,707,2214,688,2216,668,2209,646,2194,623,2181,615,2155,606,2077,589,1881,562,1882,557,2078,584,2157,601,2183,610,2198,619,2214,644,2221,667,2219,689,2210,709,2194,728,2172,746,2116,776,2047,802,1973,823,1836,851"><area shape="rect" id="node15" href="amiq_i2c-amiq_i2c_agent_smp_u.html"  alt="" coords="665,435,879,466"><area shape="poly" id="edge94"  alt="" coords="1679,862,1300,852,1096,841,1012,833,948,824,879,818,816,817,789,811,768,800,754,781,749,751,749,543,753,509,760,478,765,479,758,510,755,543,755,750,759,779,772,796,791,806,816,811,879,813,948,819,1012,828,1096,836,1300,847,1679,857"><area shape="rect" id="node17"  alt="" coords="119,267,199,298"><area shape="poly" id="edge95"  alt="" coords="1679,862,1274,855,715,838,445,824,219,806,130,795,63,782,19,768,7,760,3,751,3,393,5,375,13,358,37,330,70,310,105,296,107,301,73,315,41,335,17,361,10,376,8,394,8,750,11,757,22,763,64,777,131,789,219,800,445,819,715,833,1274,850,1679,857"><area shape="rect" id="node18" href="amiq_i2c-amiq_i2c_synchronizer_u.html"  alt="" coords="1187,435,1429,466"><area shape="poly" id="edge96"  alt="" coords="1679,859,1503,847,1296,826,1202,811,1123,795,1070,775,1055,764,1049,751,1049,589,1051,555,1057,541,1069,526,1093,505,1121,489,1181,466,1183,471,1123,494,1096,510,1073,530,1062,543,1056,556,1055,589,1055,750,1059,760,1073,770,1125,790,1202,806,1297,820,1504,841,1679,853"><area shape="rect" id="node20" href="amiq_i2c-amiq_i2c_bus_monitor_u.html"  alt="" coords="1985,529,2218,559"><area shape="poly" id="edge97"  alt="" coords="1835,851,1974,834,2137,806,2215,787,2283,764,2337,738,2357,723,2371,708,2383,681,2379,658,2363,637,2337,617,2303,600,2265,586,2186,564,2188,559,2267,581,2305,596,2340,613,2367,633,2384,656,2388,682,2376,711,2360,727,2340,742,2285,769,2216,792,2138,811,1975,839,1836,856"><area shape="rect" id="node2" href="amiq_i2c-amiq_i2c_bfm_u.html"  alt="" coords="2020,1033,2244,1063"><area shape="poly" id="edge6"  alt="" coords="2103,1036,1796,885,1798,880,2106,1031"><area shape="rect" id="node23" href="amiq_i2c-amiq_i2c_m_driver_u.html"  alt="" coords="2799,939,3003,970"><area shape="poly" id="edge98"  alt="" coords="2244,1031,2786,967,2786,972,2245,1036"><area shape="rect" id="node3" href="amiq_i2c-amiq_i2c_bfm_u.html"  alt="" coords="3643,939,3858,970"><area shape="poly" id="edge7"  alt="" coords="3643,943,3624,941,3451,932,3316,931,3181,929,3008,917,2917,904,2667,888,2471,885,2275,886,2024,880,1849,871,1849,866,2024,875,2275,880,2471,880,2667,883,2918,899,3008,912,3181,923,3316,926,3451,927,3624,936,3643,938"><area shape="rect" id="node33" href="amiq_i2c-amiq_i2c_s_driver_u.html"  alt="" coords="3846,846,4050,877"><area shape="poly" id="edge119"  alt="" coords="3779,938,3905,879,3908,884,3781,942"><area shape="rect" id="node5" href="amiq_i2c-amiq_i2c_any_unit_u.html"  alt="" coords="1669,211,1873,242"><area shape="poly" id="edge3"  alt="" coords="1683,322,1711,297,1751,251,1755,254,1715,301,1686,326"><area shape="rect" id="node6"  alt="" coords="1067,99,1165,130"><area shape="poly" id="edge4"  alt="" coords="1668,224,1455,211,1353,201,1279,189,1210,166,1151,138,1153,133,1212,161,1281,184,1354,196,1455,206,1668,219"><area shape="rect" id="node7"  alt="" coords="573,6,691,37"><area shape="poly" id="edge5"  alt="" coords="1066,107,705,39,706,34,1067,101"><area shape="rect" id="node40"  alt="" coords="3101,99,3286,130"><area shape="poly" id="edge11"  alt="" coords="2956,323,2961,295,2974,265,3013,221,3059,184,3106,155,3148,133,3150,138,3108,159,3062,188,3016,225,2978,268,2966,297,2961,324"><area shape="rect" id="node9" href="amiq_i2c-amiq_i2c_sda_def_s.html"  alt="" coords="1903,211,2097,242"><area shape="poly" id="edge57"  alt="" coords="2897,326,2754,297,2581,269,2455,256,2329,246,2111,234,2111,229,2329,240,2456,250,2582,264,2755,292,2898,321"><area shape="rect" id="node11" href="amiq_i2c-amiq_i2c_scl_def_s.html"  alt="" coords="2723,155,2917,186"><area shape="poly" id="edge62"  alt="" coords="2964,323,2977,299,2989,270,2992,239,2989,225,2982,212,2962,200,2930,190,2931,185,2965,195,2986,209,2994,223,2997,239,2994,271,2982,302,2969,325"><area shape="poly" id="edge9"  alt="" coords="1902,215,1884,213,1770,210,1622,210,1476,206,1413,200,1363,189,1336,175,1311,157,1245,125,1177,101,1112,85,1060,77,941,64,704,34,705,28,942,59,1061,72,1113,80,1178,96,1247,120,1313,152,1339,170,1365,184,1414,194,1476,201,1622,205,1770,205,1884,208,1903,210"><area shape="rect" id="node10" href="amiq_i2c-amiq_i2c_sda_element_s.html"  alt="" coords="1570,99,1803,130"><area shape="poly" id="edge58"  alt="" coords="2097,218,2245,205,2304,196,2323,190,2333,185,2339,171,2333,157,2314,151,2272,145,2138,135,1817,122,1817,117,2139,129,2273,139,2316,145,2336,153,2345,171,2337,188,2325,195,2305,201,2245,211,2098,223"><area shape="poly" id="edge59"  alt="" coords="1902,215,1884,213,1627,208,1459,201,1402,196,1374,189,1366,171,1374,153,1397,142,1441,134,1556,122,1556,127,1441,139,1399,147,1378,157,1371,171,1378,185,1403,191,1460,196,1627,203,1884,208,1903,210"><area shape="poly" id="edge60"  alt="" coords="1902,216,1884,213,1781,212,1724,206,1702,199,1686,188,1676,167,1677,143,1682,143,1682,166,1690,185,1704,194,1725,201,1781,206,1884,208,1903,210"><area shape="poly" id="edge61"  alt="" coords="1997,212,1992,183,1985,169,1976,157,1950,144,1912,134,1817,123,1817,117,1913,129,1952,139,1979,153,1990,166,1997,181,2002,211"><area shape="poly" id="edge8"  alt="" coords="1613,103,1490,82,1349,64,1168,48,988,38,705,27,705,22,988,32,1168,43,1350,59,1491,77,1614,97"><area shape="poly" id="edge10"  alt="" coords="2722,161,2681,157,2086,105,1489,64,1044,41,705,28,706,22,1044,36,1489,59,2086,99,2682,152,2723,156"><area shape="poly" id="edge36"  alt="" coords="1568,624,1534,595,1496,559,1467,522,1460,505,1460,490,1475,452,1492,424,1515,401,1548,376,1589,355,1592,360,1551,381,1519,405,1496,428,1480,454,1465,491,1465,504,1472,519,1500,555,1538,592,1571,620"><area shape="poly" id="edge64"  alt="" coords="1579,623,1577,603,1583,582,1603,569,1634,559,1636,564,1606,574,1587,586,1582,603,1585,622"><area shape="rect" id="node14"  alt="" coords="2167,435,2545,466"><area shape="poly" id="edge65"  alt="" coords="1713,626,1950,609,2225,582,2353,565,2462,546,2543,525,2569,514,2585,502,2587,498,2586,494,2573,485,2514,470,2515,465,2575,480,2590,491,2592,498,2589,506,2572,518,2544,530,2463,551,2354,571,2225,587,1950,614,1713,631"><area shape="poly" id="edge66"  alt="" coords="1508,625,1373,600,1070,531,834,471,836,466,1072,526,1374,595,1509,620"><area shape="poly" id="edge75"  alt="" coords="1460,628,1157,600,794,563,724,558,635,557,427,552,323,544,228,529,186,519,149,505,118,489,94,468,69,433,61,398,67,361,86,321,104,302,108,306,90,324,72,363,66,398,74,431,98,465,121,484,152,500,188,514,229,524,323,539,427,547,635,551,724,553,795,557,1157,595,1461,623"><area shape="poly" id="edge76"  alt="" coords="1459,629,1424,617,1392,599,1363,573,1341,541,1314,480,1318,477,1346,538,1367,569,1395,595,1426,612,1461,624"><area shape="poly" id="edge82"  alt="" coords="1662,620,2011,558,2012,564,1663,625"><area shape="poly" id="edge12"  alt="" coords="1718,532,1627,493,1603,488,1582,488,1563,484,1545,468,1537,452,1537,435,1543,420,1555,405,1587,379,1623,357,1625,362,1590,383,1559,409,1548,422,1542,437,1542,451,1549,465,1565,479,1583,482,1604,483,1629,488,1720,527"><area shape="rect" id="node41"  alt="" coords="2290,323,2457,354"><area shape="poly" id="edge13"  alt="" coords="2364,435,2376,410,2379,388,2377,367,2382,367,2384,389,2381,411,2369,437"><area shape="poly" id="edge33"  alt="" coords="2312,438,2295,427,2282,412,2276,395,2282,377,2302,358,2306,362,2286,380,2281,395,2286,409,2299,423,2315,434"><area shape="poly" id="edge34"  alt="" coords="2346,436,2337,409,2336,393,2339,378,2347,363,2352,365,2344,380,2341,394,2343,408,2351,435"><area shape="poly" id="edge22"  alt="" coords="879,445,1039,435,1128,424,1215,408,1240,401,1258,392,1301,376,1523,352,1524,357,1302,381,1260,397,1241,406,1217,413,1129,430,1040,441,880,451"><area shape="rect" id="node16"  alt="" coords="777,211,1029,242"><area shape="poly" id="edge67"  alt="" coords="879,442,968,431,1059,408,1117,391,1137,378,1156,353,1163,331,1158,313,1144,298,1124,287,1081,273,1059,269,987,247,989,242,1061,264,1082,268,1126,282,1147,294,1163,310,1169,331,1161,356,1141,382,1119,395,1061,413,969,436,880,447"><area shape="poly" id="edge68"  alt="" coords="664,447,483,435,399,425,338,413,294,399,254,382,239,370,230,357,228,340,235,321,255,295,278,281,338,264,417,249,527,239,763,228,763,233,527,244,418,255,339,269,280,286,259,299,240,324,233,341,235,355,243,367,257,377,295,394,339,408,400,420,483,430,664,442"><area shape="poly" id="edge69"  alt="" coords="664,449,568,438,517,427,469,413,427,398,390,381,377,369,369,356,367,340,374,321,392,296,413,282,469,264,522,252,596,243,763,231,763,236,597,248,523,258,470,269,416,287,396,300,378,324,372,340,374,354,381,366,393,376,429,394,470,408,519,422,569,432,665,444"><area shape="poly" id="edge70"  alt="" coords="664,441,596,427,537,404,514,388,500,369,496,347,504,321,521,297,541,283,593,264,677,241,763,230,763,235,678,247,594,269,543,288,525,301,509,324,502,347,505,367,518,384,539,399,597,422,665,436"><area shape="poly" id="edge71"  alt="" coords="733,438,690,419,649,392,633,377,623,359,621,341,628,321,655,291,687,267,724,250,762,239,764,244,726,255,690,272,658,295,633,324,626,341,628,358,638,373,652,388,693,414,735,433"><area shape="poly" id="edge72"  alt="" coords="768,436,770,384,776,352,788,321,804,298,824,278,865,247,868,251,827,282,808,302,793,324,781,353,775,384,774,436"><area shape="poly" id="edge73"  alt="" coords="791,434,832,400,853,378,871,353,882,329,890,303,898,255,904,256,895,304,887,331,876,356,858,382,836,404,794,438"><area shape="poly" id="edge74"  alt="" coords="851,433,887,422,923,405,956,383,982,353,987,340,988,327,977,299,956,274,932,252,936,248,960,270,982,297,993,326,993,341,986,356,959,387,926,410,889,427,852,439"><area shape="rect" id="node42"  alt="" coords="787,99,954,130"><area shape="poly" id="edge14"  alt="" coords="916,210,934,186,938,170,934,156,917,139,921,135,938,153,943,170,938,188,921,213"><area shape="poly" id="edge15"  alt="" coords="947,210,964,199,976,185,982,170,976,156,956,138,960,134,981,153,987,170,981,188,967,203,950,214"><area shape="poly" id="edge16"  alt="" coords="989,210,1006,199,1020,185,1026,171,1021,156,1000,144,967,133,968,128,1003,139,1025,153,1032,171,1025,188,1010,203,991,214"><area shape="poly" id="edge17"  alt="" coords="1008,209,1039,200,1062,189,1072,174,1070,166,1065,156,1050,146,1028,138,968,126,969,121,1029,133,1053,142,1069,153,1076,164,1077,175,1065,193,1041,205,1009,214"><area shape="poly" id="edge18"  alt="" coords="1028,216,1071,208,1104,195,1114,188,1119,179,1118,169,1110,157,1093,149,1060,141,968,128,969,123,1060,136,1095,144,1114,153,1123,167,1124,180,1118,191,1107,200,1073,213,1029,221"><area shape="poly" id="edge19"  alt="" coords="776,223,620,211,559,202,538,196,526,188,518,171,526,153,538,146,559,140,621,130,773,118,774,123,621,135,560,145,540,151,530,156,524,171,530,185,540,191,560,196,621,206,777,218"><area shape="poly" id="edge20"  alt="" coords="776,220,658,208,613,199,589,189,581,171,589,153,601,143,618,135,664,124,718,117,773,114,774,119,718,122,665,129,620,140,604,148,593,156,586,171,593,185,614,194,658,202,777,215"><area shape="poly" id="edge21"  alt="" coords="776,223,701,212,671,202,651,188,642,171,643,156,653,144,670,135,717,123,773,116,774,121,718,128,672,140,656,149,647,158,647,170,655,185,673,197,702,207,777,218"><area shape="poly" id="edge24"  alt="" coords="779,214,739,204,714,189,707,177,706,166,718,149,742,136,773,127,775,132,744,141,721,153,712,168,712,175,718,185,741,199,780,209"><area shape="poly" id="edge25"  alt="" coords="810,214,792,203,776,188,770,171,776,153,797,134,800,138,781,156,775,171,781,185,795,199,813,209"><area shape="poly" id="edge26"  alt="" coords="867,214,851,203,839,188,834,171,839,154,846,139,851,141,844,156,840,171,844,185,855,199,870,209"><area shape="poly" id="edge27"  alt="" coords="896,213,876,143,881,142,901,211"><area shape="poly" id="edge23"  alt="" coords="199,272,250,264,295,260,331,260,364,256,404,240,430,222,446,202,460,179,482,153,546,92,603,43,607,47,550,96,486,156,465,182,450,205,434,225,407,245,366,261,331,266,295,266,251,269,199,278"><area shape="poly" id="edge32"  alt="" coords="160,267,174,225,199,167,237,108,261,81,289,59,310,49,338,41,408,30,559,21,559,26,409,36,339,47,312,54,292,64,265,85,241,111,204,170,179,226,165,268"><area shape="poly" id="edge37"  alt="" coords="169,266,367,59,401,47,450,38,558,25,559,31,451,43,403,52,369,64,173,270"><area shape="poly" id="edge40"  alt="" coords="182,265,594,40,597,45,185,270"><area shape="poly" id="edge29"  alt="" coords="1429,441,1538,431,1651,415,1703,403,1748,389,1783,372,1807,353,1814,342,1817,330,1814,303,1803,277,1788,254,1792,251,1807,275,1819,302,1822,330,1819,344,1811,356,1786,377,1750,394,1704,408,1652,420,1538,437,1430,446"><area shape="rect" id="node19" href="amiq_i2c-amiq_i2c_env_smp_u.html"  alt="" coords="1316,323,1511,354"><area shape="poly" id="edge77"  alt="" coords="1316,434,1365,377,1383,360,1387,364,1369,381,1320,437"><area shape="poly" id="edge28"  alt="" coords="1504,321,1556,311,1607,296,1641,281,1675,264,1723,244,1725,249,1677,269,1644,286,1609,301,1557,316,1505,327"><area shape="poly" id="edge78"  alt="" coords="1357,326,1328,316,1300,301,1284,284,1279,276,1269,269,1230,257,1174,247,1042,235,1043,230,1175,242,1231,251,1272,264,1282,272,1288,280,1303,297,1330,311,1359,321"><area shape="poly" id="edge79"  alt="" coords="1409,325,1401,295,1394,281,1383,269,1366,262,1337,256,1252,246,1042,235,1042,229,1253,241,1338,251,1368,257,1385,264,1398,277,1406,293,1414,323"><area shape="poly" id="edge80"  alt="" coords="1456,322,1473,311,1486,297,1492,282,1486,268,1466,258,1428,250,1315,238,1177,232,1042,230,1042,225,1177,227,1315,233,1429,245,1468,253,1490,265,1497,282,1490,300,1476,315,1459,326"><area shape="poly" id="edge81"  alt="" coords="1316,328,1227,314,1173,301,1164,293,1160,284,1156,276,1148,269,1105,255,1042,244,1043,238,1106,249,1151,264,1160,273,1164,281,1168,289,1176,296,1228,309,1316,322"><area shape="poly" id="edge35"  alt="" coords="1984,535,1914,526,1845,512,1788,493,1766,482,1751,468,1741,449,1744,433,1756,422,1775,412,1819,390,1840,375,1855,354,1861,330,1857,309,1844,290,1825,269,1805,251,1808,247,1829,265,1848,287,1862,307,1867,330,1860,356,1843,378,1822,395,1777,417,1759,426,1748,436,1746,448,1755,465,1769,477,1790,488,1847,507,1915,521,1985,530"><area shape="poly" id="edge83"  alt="" coords="1984,538,1829,525,1759,516,1709,507,1666,491,1625,469,1577,437,1449,363,1452,358,1580,432,1628,464,1668,486,1710,501,1760,511,1830,519,1984,533"><area shape="poly" id="edge84"  alt="" coords="1984,537,1564,507,1499,493,1388,471,1389,465,1501,488,1564,501,1985,532"><area shape="poly" id="edge85"  alt="" coords="2218,534,2482,519,2597,510,2662,501,2701,486,2739,464,2923,358,2925,363,2741,469,2704,491,2663,507,2597,515,2482,524,2218,540"><area shape="poly" id="edge86"  alt="" coords="2218,534,2481,518,2700,501,2768,500,2824,505,2849,504,2874,498,2899,486,2926,465,2942,443,2951,417,2956,367,2962,367,2957,419,2947,446,2930,469,2902,490,2876,503,2850,509,2824,510,2768,506,2700,507,2481,524,2219,539"><area shape="rect" id="node21"  alt="" coords="1766,435,2143,466"><area shape="poly" id="edge87"  alt="" coords="1984,532,1943,522,1917,506,1913,497,1913,489,1923,474,1927,476,1918,490,1918,496,1921,502,1945,517,1985,527"><area shape="rect" id="node22" href="amiq_i2c-amiq_i2c_env_config_u.html"  alt="" coords="2480,379,2704,410"><area shape="poly" id="edge88"  alt="" coords="2218,530,2317,518,2421,501,2490,488,2528,477,2554,465,2571,444,2582,421,2587,423,2576,447,2558,469,2530,482,2492,493,2422,507,2318,524,2219,535"><area shape="poly" id="edge89"  alt="" coords="1984,537,1880,531,1676,521,1503,517,1209,514,1067,511,915,504,743,491,540,469,455,464,388,462,356,458,323,449,288,435,249,413,222,391,199,364,168,311,172,308,203,360,226,387,252,408,291,430,325,444,357,453,388,457,456,459,540,464,743,486,916,499,1067,506,1209,509,1503,512,1676,516,1880,525,1984,532"><area shape="poly" id="edge90"  alt="" coords="2218,535,2472,520,2576,511,2624,502,2633,487,2633,470,2633,452,2642,433,2674,420,2739,399,2895,354,2896,360,2741,404,2675,425,2646,437,2638,453,2638,470,2638,489,2627,506,2577,516,2472,525,2218,540"><area shape="poly" id="edge91"  alt="" coords="2152,527,2232,502,2263,488,2310,468,2312,473,2265,493,2234,506,2153,532"><area shape="poly" id="edge92"  alt="" coords="2094,529,2092,509,2099,489,2121,475,2153,464,2155,469,2123,479,2103,492,2097,510,2100,529"><area shape="poly" id="edge30"  alt="" coords="2005,433,2308,354,2310,359,2007,439"><area shape="poly" id="edge31"  alt="" coords="2572,382,2526,353,2467,325,2238,291,1886,245,1887,240,2239,286,2469,320,2529,348,2575,378"><area shape="rect" id="node43" href="amiq_i2c-amiq_i2c_driver_u.html"  alt="" coords="1803,734,1989,765"><area shape="poly" id="edge39"  alt="" coords="2834,943,1976,769,1977,764,2836,937"><area shape="rect" id="node24"  alt="" coords="2499,790,2925,821"><area shape="poly" id="edge99"  alt="" coords="2810,943,2767,931,2738,917,2724,898,2716,876,2709,834,2714,833,2721,875,2729,895,2742,913,2769,926,2812,937"><area shape="rect" id="node25" href="amiq_i2c-amiq_i2c_m_seq.html"  alt="" coords="3566,846,3818,877"><area shape="poly" id="edge100"  alt="" coords="2998,937,3302,899,3552,873,3552,878,3303,904,2998,943"><area shape="rect" id="node28" href="amiq_i2c-amiq_i2c_m_seq.html"  alt="" coords="3067,846,3387,877"><area shape="poly" id="edge110"  alt="" coords="2949,937,3165,877,3166,882,2950,943"><area shape="poly" id="edge38"  alt="" coords="2720,789,2764,736,2834,657,2923,569,2972,527,3023,488,3038,481,3051,479,3063,475,3072,465,3079,450,3073,436,3060,429,3038,423,2971,416,2783,415,2592,419,2520,418,2478,413,2433,391,2397,365,2400,360,2436,387,2479,408,2521,413,2592,414,2783,410,2971,411,3039,418,3062,424,3077,433,3084,450,3077,468,3065,480,3053,484,3039,486,3025,493,2975,531,2927,573,2838,661,2768,739,2725,792"><area shape="rect" id="node26" href="amiq_i2c-amiq_i2c_m_seq.html"  alt="" coords="3422,1033,3578,1063"><area shape="poly" id="edge43"  alt="" coords="3675,878,3639,906,3601,940,3573,975,3546,1010,3529,1026,3526,1022,3542,1006,3569,971,3597,937,3636,902,3671,874"><area shape="poly" id="edge101"  alt="" coords="3757,874,3808,889,3853,910,3869,923,3879,938,3881,954,3871,972,3853,988,3826,1001,3755,1021,3672,1035,3592,1043,3592,1038,3671,1030,3754,1016,3824,996,3850,983,3867,969,3875,953,3874,940,3865,927,3850,914,3806,894,3756,879"><area shape="poly" id="edge109"  alt="" coords="3802,873,3891,886,3944,899,3965,913,3980,931,3985,951,3977,972,3952,993,3914,1009,3867,1022,3813,1032,3698,1044,3592,1049,3592,1044,3698,1039,3813,1027,3866,1017,3912,1004,3949,988,3973,969,3980,951,3975,933,3961,917,3942,904,3890,892,3801,879"><area shape="rect" id="node27"  alt="" coords="4157,211,4294,242"><area shape="poly" id="edge41"  alt="" coords="3578,1042,3864,1033,4235,1016,4410,1004,4556,990,4656,973,4682,964,4691,955,4691,338,4688,324,4680,312,4651,291,4606,273,4550,260,4424,241,4308,233,4308,228,4425,236,4551,254,4608,268,4653,286,4684,309,4693,322,4696,337,4696,957,4685,968,4657,978,4557,995,4411,1010,4236,1022,3865,1039,3578,1047"><area shape="poly" id="edge102"  alt="" coords="3422,1047,3146,1035,3018,1024,2973,1018,2946,1010,2928,998,2915,983,2919,979,2932,994,2948,1006,2974,1013,3019,1019,3147,1030,3422,1042"><area shape="poly" id="edge42"  alt="" coords="4156,221,3300,130,3300,125,4157,215"><area shape="poly" id="edge108"  alt="" coords="4294,234,4310,231,4315,226,4313,224,4306,221,4309,216,4316,220,4320,227,4312,236,4295,239"><area shape="poly" id="edge48"  alt="" coords="3234,875,3242,894,3255,913,3299,952,3349,983,3399,1008,3444,1026,3442,1031,3397,1013,3346,988,3296,956,3251,916,3238,897,3229,877"><area shape="rect" id="node29" href="amiq_i2c-amiq_i2c_m_seq.html"  alt="" coords="3111,734,3353,765"><area shape="poly" id="edge111"  alt="" coords="3225,846,3228,778,3233,778,3230,847"><area shape="poly" id="edge47"  alt="" coords="3277,762,3308,774,3341,792,3373,815,3400,844,3415,879,3430,926,3443,973,3458,1007,3472,1023,3468,1026,3454,1009,3438,974,3424,927,3410,880,3395,847,3369,819,3338,797,3305,779,3275,767"><area shape="rect" id="node30" href="amiq_i2c-amiq_i2c_m_seq.html"  alt="" coords="2983,622,3187,653"><area shape="poly" id="edge112"  alt="" coords="3124,737,3105,726,3088,711,3079,689,3078,666,3083,665,3084,688,3093,708,3108,722,3127,732"><area shape="rect" id="node31" href="amiq_i2c-amiq_i2c_m_seq.html"  alt="" coords="3124,529,3348,559"><area shape="poly" id="edge118"  alt="" coords="3230,734,3233,572,3238,572,3235,734"><area shape="poly" id="edge46"  alt="" coords="3082,653,3053,734,3037,789,3025,846,3023,862,3025,876,3039,898,3061,912,3149,956,3241,990,3331,1014,3409,1030,3408,1036,3329,1019,3240,995,3147,961,3059,917,3035,901,3020,878,3017,862,3020,845,3032,788,3048,732,3077,651"><area shape="poly" id="edge113"  alt="" coords="3074,623,3068,603,3068,592,3073,582,3093,569,3124,559,3125,564,3095,574,3077,586,3073,594,3073,603,3079,621"><area shape="poly" id="edge45"  alt="" coords="3288,556,3340,580,3365,598,3385,620,3400,646,3408,671,3409,717,3405,764,3407,791,3414,820,3458,900,3481,964,3496,1019,3491,1021,3476,965,3454,902,3410,822,3402,792,3400,764,3403,717,3403,672,3395,649,3381,623,3361,602,3337,585,3286,561"><area shape="rect" id="node32" href="amiq_i2c-amiq_i2c_item_s.html"  alt="" coords="3203,435,3437,466"><area shape="poly" id="edge114"  alt="" coords="3195,531,3168,514,3162,502,3166,489,3185,476,3215,466,3217,471,3188,481,3170,492,3167,502,3172,511,3197,527"><area shape="poly" id="edge117"  alt="" coords="3261,527,3293,502,3308,477,3313,480,3297,506,3264,531"><area shape="poly" id="edge44"  alt="" coords="3288,438,3217,410,3133,381,3042,359,3043,354,3134,376,3219,405,3290,433"><area shape="poly" id="edge115"  alt="" coords="3377,463,3398,474,3417,489,3439,516,3453,542,3462,566,3467,591,3473,644,3488,709,3503,748,3515,789,3520,854,3519,918,3508,1020,3502,1020,3514,918,3515,854,3509,790,3498,750,3483,710,3468,645,3461,592,3457,568,3448,544,3434,519,3413,493,3395,478,3374,468"><area shape="poly" id="edge116"  alt="" coords="3244,468,3152,494,3102,513,3055,537,3013,567,2979,602,2956,644,2950,667,2948,692,2948,863,2940,899,2923,930,2918,927,2935,897,2943,862,2943,692,2945,666,2951,642,2974,599,3009,563,3052,533,3100,508,3150,489,3243,463"><area shape="poly" id="edge50"  alt="" coords="3845,850,3654,824,3552,806,3449,792,3147,776,2734,765,2003,754,2003,749,2734,759,3147,770,3450,787,3553,801,3655,819,3846,844"><area shape="rect" id="node34"  alt="" coords="3487,678,3913,709"><area shape="poly" id="edge120"  alt="" coords="3857,849,3787,836,3747,824,3727,801,3713,774,3700,722,3705,721,3718,772,3731,798,3749,819,3788,831,3858,844"><area shape="rect" id="node35" href="amiq_i2c-amiq_i2c_s_seq.html"  alt="" coords="3807,734,4059,765"><area shape="poly" id="edge121"  alt="" coords="3944,847,3934,778,3940,777,3949,846"><area shape="poly" id="edge49"  alt="" coords="3689,680,3657,631,3603,562,3569,526,3532,492,3491,462,3447,437,3418,428,3380,422,3290,416,3128,413,2804,388,2466,358,2466,352,2805,383,3128,408,3291,411,3381,416,3419,423,3449,432,3494,457,3535,488,3573,523,3607,559,3661,627,3694,677"><area shape="rect" id="node36" href="amiq_i2c-amiq_i2c_s_seq.html"  alt="" coords="4147,323,4303,354"><area shape="poly" id="edge55"  alt="" coords="3946,732,3979,692,3991,666,3996,638,3996,449,3999,427,4009,407,4023,391,4041,377,4085,357,4133,346,4135,351,4087,362,4044,382,4027,394,4013,410,4004,428,4001,450,4001,639,3996,668,3983,695,3951,736"><area shape="poly" id="edge122"  alt="" coords="4052,732,4091,721,4129,704,4162,681,4190,652,4194,638,4190,622,4179,604,4167,592,4153,580,4139,562,4100,499,4092,469,4094,452,4102,433,4117,409,4138,389,4182,358,4185,362,4141,393,4121,413,4106,436,4100,454,4098,469,4104,497,4144,558,4157,576,4171,588,4184,600,4194,620,4200,638,4194,655,4166,685,4131,709,4093,726,4054,737"><area shape="rect" id="node37" href="amiq_i2c-amiq_i2c_s_seq.html"  alt="" coords="4249,622,4559,653"><area shape="poly" id="edge124"  alt="" coords="4059,736,4143,725,4229,707,4301,683,4363,656,4366,660,4303,688,4230,712,4144,730,4060,741"><area shape="poly" id="edge129"  alt="" coords="3928,735,3912,678,3895,645,3877,621,3860,596,3847,561,3831,508,3819,463,3818,442,3821,421,3831,399,3848,377,3862,369,3886,362,3959,352,4133,340,4133,346,3959,357,3887,368,3864,374,3851,381,3835,402,3826,422,3823,442,3824,462,3836,506,3852,559,3865,594,3881,618,3899,642,3917,676,3933,734"><area shape="poly" id="edge51"  alt="" coords="4223,324,4223,255,4228,255,4228,324"><area shape="poly" id="edge123"  alt="" coords="4304,344,4396,357,4492,377,4534,391,4568,407,4591,426,4598,437,4600,449,4600,751,4596,762,4583,772,4541,790,4478,805,4401,819,4226,840,4064,855,4064,849,4226,835,4400,813,4477,800,4539,785,4581,768,4591,759,4595,750,4595,450,4593,439,4587,430,4565,412,4532,396,4491,383,4395,362,4303,350"><area shape="poly" id="edge54"  alt="" coords="4493,620,4510,610,4525,596,4530,588,4532,579,4528,561,4516,529,4493,479,4470,442,4440,412,4396,381,4357,363,4316,352,4318,346,4359,358,4399,376,4444,408,4475,439,4498,477,4521,527,4534,559,4537,579,4535,590,4529,599,4514,614,4495,625"><area shape="rect" id="node38" href="amiq_i2c-amiq_i2c_s_seq.html"  alt="" coords="4245,529,4507,559"><area shape="poly" id="edge125"  alt="" coords="4397,623,4389,598,4382,573,4387,572,4395,597,4402,622"><area shape="poly" id="edge53"  alt="" coords="4378,528,4385,498,4389,459,4385,417,4378,398,4367,381,4348,368,4316,358,4318,353,4350,363,4371,377,4383,396,4390,416,4394,459,4390,499,4383,530"><area shape="rect" id="node39" href="amiq_i2c-amiq_i2c_item_s.html"  alt="" coords="4116,435,4340,466"><area shape="poly" id="edge126"  alt="" coords="4330,532,4277,506,4246,478,4249,474,4280,502,4332,527"><area shape="poly" id="edge52"  alt="" coords="4116,442,3054,351,3054,346,4116,437"><area shape="poly" id="edge127"  alt="" coords="4225,436,4224,411,4223,367,4228,367,4229,411,4230,436"><area shape="poly" id="edge128"  alt="" coords="4225,466,4195,540,4147,647,4092,753,4065,795,4040,823,4009,843,4006,839,4037,819,4061,791,4087,750,4142,644,4190,538,4220,464"><area shape="poly" id="edge103"  alt="" coords="1837,737,1750,712,1684,686,1626,660,1628,656,1686,681,1752,707,1839,732"><area shape="poly" id="edge104"  alt="" coords="1896,734,1901,704,1902,665,1895,623,1887,603,1875,586,1852,567,1856,563,1879,582,1891,601,1900,621,1907,664,1906,705,1902,735"><area shape="poly" id="edge105"  alt="" coords="1806,737,1796,736,1654,723,1512,712,1266,691,1159,678,1022,656,655,566,415,505,290,469,247,448,215,426,191,398,170,356,158,311,164,310,174,354,195,395,219,422,250,444,292,464,416,500,656,561,1023,651,1160,673,1267,685,1512,707,1654,718,1796,731,1807,732"><area shape="poly" id="edge106"  alt="" coords="1811,737,1594,698,1499,676,1466,665,1446,655,1432,641,1424,625,1419,595,1416,563,1411,547,1402,530,1374,499,1342,475,1345,470,1378,495,1406,526,1416,545,1421,562,1424,594,1429,624,1437,637,1450,651,1468,660,1500,671,1595,693,1812,732"><area shape="poly" id="edge107"  alt="" coords="1932,732,1996,701,2028,679,2057,652,2070,633,2080,612,2094,571,2099,573,2085,614,2075,635,2061,655,2032,683,1998,706,1935,737">
+			</map>
+		</ul>
+	</div>
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#direct_associations">
+			<h4 class="panel-title">
+				Direct Associations Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="direct_associations" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_bfm_u_direct_associations.png" border="0" usemap="#_direct_associations">
+			<map name="_direct_associations"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_bfm_u.html"  alt="" coords="39,278,195,309"><area shape="rect" id="node4" href="amiq_i2c-amiq_i2c_item_s.html"  alt="" coords="470,114,637,145"><area shape="poly" id="edge1"  alt="" coords="131,276,181,231,215,206,252,186,303,166,356,151,456,134,457,139,357,157,304,171,254,190,218,211,185,235,135,280"><area shape="rect" id="node5" href="amiq_i2c-amiq_i2c_agent_monitor_u.html"  alt="" coords="427,169,679,199"><area shape="poly" id="edge2"  alt="" coords="149,276,197,256,253,236,341,214,428,198,429,203,342,219,254,241,199,261,151,281"><area shape="rect" id="node6" href="amiq_i2c-amiq_i2c_agent_config_u.html"  alt="" coords="432,223,675,254"><area shape="poly" id="edge3"  alt="" coords="195,280,253,272,418,252,418,257,254,277,196,285"><area shape="rect" id="node7" href="amiq_i2c-amiq_i2c_agent_smp_u.html"  alt="" coords="446,278,661,309"><area shape="poly" id="edge4"  alt="" coords="196,291,432,291,432,296,196,296"><area shape="rect" id="node8"  alt="" coords="513,333,593,363"><area shape="poly" id="edge5"  alt="" coords="196,302,254,309,500,339,499,345,253,315,195,307"><area shape="rect" id="node9" href="amiq_i2c-amiq_i2c_synchronizer_u.html"  alt="" coords="432,387,675,418"><area shape="poly" id="edge6"  alt="" coords="150,306,198,327,254,347,339,368,423,383,422,389,338,373,253,352,196,332,148,311"><area shape="rect" id="node10" href="amiq_i2c-amiq_i2c_bus_monitor_u.html"  alt="" coords="437,442,670,473"><area shape="poly" id="edge7"  alt="" coords="134,306,184,352,218,377,254,398,295,414,338,427,424,444,423,449,337,432,294,419,252,402,215,381,181,356,131,310"><area shape="rect" id="node2" href="amiq_i2c-amiq_i2c_bfm_u.html"  alt="" coords="5,59,229,90"><area shape="rect" id="node11" href="amiq_i2c-amiq_i2c_m_driver_u.html"  alt="" coords="451,59,655,90"><area shape="poly" id="edge8"  alt="" coords="230,72,438,72,438,77,230,77"><area shape="rect" id="node3" href="amiq_i2c-amiq_i2c_bfm_u.html"  alt="" coords="10,5,225,35"><area shape="rect" id="node12" href="amiq_i2c-amiq_i2c_s_driver_u.html"  alt="" coords="451,5,655,35"><area shape="poly" id="edge9"  alt="" coords="225,17,438,17,438,23,225,23">
+			</map>
+		</ul>
+	</div>
+
+<!-- ========= END Diagrams ======= -->
+
+
+
+<hr>
+The documentation for this unit was generated from the following file: <a href="../e/amiq_i2c_bfm_h.e">amiq_i2c_bfm_h.e</a>
+
+	</div>
+	<script src="lib/jquery/js/jquery.js"></script>
+	<script src="lib/jquery/js/jquery.scrollUp.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="js/content.js"></script>
+	<script src="js/custom.js"></script>
+
+	</body>
+</html>

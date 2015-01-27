@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>amiq_i2c
+API Specification</title>
+
+	<meta name="author" content="cristian.slav">
+	<meta name="description" content="amiq_i2c API Specification">
+	<meta name="generator" content="Specador. Copyright (C) 2005-2014 AMIQ EDA ">
+	<meta name="keywords" content="e Language, HTML Documentation, Specador, AMIQ EDA, amiq_i2c API Specification">
+
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/content.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container-fluid">
+<h2 class="page-element-name">Unit <a  href="summary-amiq_i2c.html">amiq_i2c</a> :: amiq_i2c_synchronizer_u</h2>
+
+
+	<br>
+	<div class="btn-group">
+				<button data-scroll="#fields" type="button" class="btn btn-default">Fields <span class="badge">2</span></button>
+		<button data-scroll="#events" type="button" class="btn btn-default">Events <span class="badge">27</span></button>
+		<button data-scroll="#tcms" type="button" class="btn btn-default">TCMs <span class="badge">1</span></button>
+		<button data-scroll="#inheritance" type="button" class="btn btn-default">Inheritance Diagram</button>
+		<button data-scroll="#collaboration" type="button" class="btn btn-default">Collaboration Diagram</button>
+		<button data-scroll="#direct_associations" type="button" class="btn btn-default">Direct Associations Diagram</button>
+
+	</div>
+	<br>
+
+<br>
+
+	<div class="panel panel-default">
+
+		<div class="panel-heading" data-toggle="collapse"
+			data-target="#collapse_class_hierarchy">
+			<h4 class="panel-title">
+				Struct Hierarchy <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+
+		<div id="collapse_class_hierarchy" class="panel-collapse collapse in">
+			<div class="panel-body">
+				<ul class="class-hierarchy">
+							<li>	 		base_struct
+
+</li>
+							<li>	 		any_struct
+
+</li>
+							<li>	 		any_unit
+
+</li>
+							<li>	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_any_unit_u.html">amiq_i2c_any_unit_u</a>
+
+</li>
+							<li>amiq_i2c_synchronizer_u</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<pre class="comment">Synchronizer unit</pre>
+
+<!-- ========= START Explicit Sub Types ======= -->
+<!-- ========= END Explicit Sub Types ======= -->
+
+<!-- ========= START Fields ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#fields">
+			<h4 class="panel-title">
+				Fields <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="fields" class="list-group panel-collapse collapse in">
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>drive_initial_reset</b>
+			<a name="field_drive_initial_reset"></a> : bool
+		</span>
+		<pre class="comment">Switch for driving an initial reset</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>ptr_smp</b>
+			<a name="field_ptr_smp"></a> : <a href="amiq_i2c-amiq_i2c_env_smp_u.html">amiq_i2c_env_smp_u</a>
+		</span>
+		<pre class="comment">Pointer to environment smp instance</pre>
+	</li>
+
+			
+		</ul>
+	</div>
+<!-- ========= END Fields ======= -->
+
+<!-- ========= START Ports ======= -->
+<!-- ========= END Ports ======= -->
+
+<!-- ========= START Events ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#events">
+			<h4 class="panel-title">
+				Events <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="events" class="list-group panel-collapse collapse in">
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>clk_c_e</b>
+			<a name="event_clk_c_e"></a>
+		</span>
+		<pre class="comment">Clock change</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>clk_f_e</b>
+			<a name="event_clk_f_e"></a>
+		</span>
+		<pre class="comment">Clock falling edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>clk_r_e</b>
+			<a name="event_clk_r_e"></a>
+		</span>
+		<pre class="comment">Clock rising edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>clk_u_c_e</b>
+			<a name="event_clk_u_c_e"></a>
+		</span>
+		<pre class="comment">Unqualified clock change</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>clk_u_f_e</b>
+			<a name="event_clk_u_f_e"></a>
+		</span>
+		<pre class="comment">Unqualified clock falling edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>clk_u_r_e</b>
+			<a name="event_clk_u_r_e"></a>
+		</span>
+		<pre class="comment">Unqualified clock rising edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>rst_a_e</b>
+			<a name="event_rst_a_e"></a>
+		</span>
+		<pre class="comment">Reset is active</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>rst_f_e</b>
+			<a name="event_rst_f_e"></a>
+		</span>
+		<pre class="comment">Unqualified reset falling edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>rst_r_e</b>
+			<a name="event_rst_r_e"></a>
+		</span>
+		<pre class="comment">Unqualified reset rising edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_c_e</b>
+			<a name="event_scl_c_e"></a>
+		</span>
+		<pre class="comment"><font color="#808080">Serial clock input change</font>    sampled on system clock rising edge
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_f_e</b>
+			<a name="event_scl_f_e"></a>
+		</span>
+		<pre class="comment"><font color="#808080">Serial clock input falling edge</font>    sampled on system clock rising edge
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_r_e</b>
+			<a name="event_scl_r_e"></a>
+		</span>
+		<pre class="comment"><font color="#808080">Serial clock input rising edge</font>    sampled on system clock rising edge
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_tr_c_e</b>
+			<a name="event_scl_tr_c_e"></a>
+		</span>
+		<pre class="comment">Serial clock input change</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_tr_f_e</b>
+			<a name="event_scl_tr_f_e"></a>
+		</span>
+		<pre class="comment">Serial clock input falling edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_tr_r_e</b>
+			<a name="event_scl_tr_r_e"></a>
+		</span>
+		<pre class="comment">Serial clock input rising edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_tr_u_c_e</b>
+			<a name="event_scl_tr_u_c_e"></a>
+		</span>
+		<pre class="comment">Unqualified serial clock input change</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_tr_u_f_e</b>
+			<a name="event_scl_tr_u_f_e"></a>
+		</span>
+		<pre class="comment">Unqualified serial clock input falling edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_tr_u_r_e</b>
+			<a name="event_scl_tr_u_r_e"></a>
+		</span>
+		<pre class="comment">Unqualified serial clock input rising edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_c_e</b>
+			<a name="event_sda_c_e"></a>
+		</span>
+		<pre class="comment"><font color="#808080">Serial data input change</font>    sampled on system clock rising edge
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_f_e</b>
+			<a name="event_sda_f_e"></a>
+		</span>
+		<pre class="comment"><font color="#808080">Serial data input falling edge</font>    sampled on system clock rising edge
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_r_e</b>
+			<a name="event_sda_r_e"></a>
+		</span>
+		<pre class="comment"><font color="#808080">Serial data input rising edge</font>    sampled on system clock rising edge
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_tr_c_e</b>
+			<a name="event_sda_tr_c_e"></a>
+		</span>
+		<pre class="comment">Serial data input change</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_tr_f_e</b>
+			<a name="event_sda_tr_f_e"></a>
+		</span>
+		<pre class="comment">Serial data input falling edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_tr_r_e</b>
+			<a name="event_sda_tr_r_e"></a>
+		</span>
+		<pre class="comment">Serial data input rising edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_tr_u_c_e</b>
+			<a name="event_sda_tr_u_c_e"></a>
+		</span>
+		<pre class="comment">Unqualified serial data input change</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_tr_u_f_e</b>
+			<a name="event_sda_tr_u_f_e"></a>
+		</span>
+		<pre class="comment">Unqualified serial data input falling edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_tr_u_r_e</b>
+			<a name="event_sda_tr_u_r_e"></a>
+		</span>
+		<pre class="comment">Unqualified serial data input rising edge</pre>
+	</li>
+
+			
+		</ul>
+	</div>
+
+	
+<!-- ========= END Events ======= -->
+
+<!-- ========= START Methods ======= -->
+
+	
+<!-- ========= END Methods ======= -->
+
+<!-- ========= START TCM ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#tcms">
+			<h4 class="panel-title">
+				TCMs <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="tcms" class="list-group panel-collapse collapse in">
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>drive_async_reset</b>
+				()
+			<a name="tcm_drive_async_reset"></a> : void
+		</span>
+		<pre class="comment">TCM for driving reset</pre>
+	</li>
+
+			
+		</ul>
+	</div>
+
+	
+<!-- ========= END TCM ======= -->
+
+<!-- ========= START Diagrams ======= -->
+
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#inheritance">
+			<h4 class="panel-title">
+				Inheritance Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="inheritance" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_synchronizer_u_inheritance.png" border="0" usemap="#_inheritance">
+			<map name="_inheritance"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_synchronizer_u.html"  alt="" coords="669,42,912,73"><area shape="poly" id="edge1"  alt="" coords="814,41,818,34,816,28,807,23,791,21,772,24,763,31,760,27,770,19,791,16,809,18,820,24,823,34,819,44"><area shape="rect" id="node2" href="amiq_i2c-amiq_i2c_any_unit_u.html"  alt="" coords="385,42,589,73"><area shape="poly" id="edge2"  alt="" coords="669,60,602,60,602,55,669,55"><area shape="rect" id="node3"  alt="" coords="205,42,304,73"><area shape="poly" id="edge3"  alt="" coords="384,60,318,60,318,55,384,55"><area shape="rect" id="node4"  alt="" coords="6,42,125,73"><area shape="poly" id="edge4"  alt="" coords="205,60,139,60,139,55,205,55">
+			</map>
+		</ul>
+	</div>
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#collaboration">
+			<h4 class="panel-title">
+				Collaboration Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="collaboration" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_synchronizer_u_collaboration.png" border="0" usemap="#_collaboration">
+			<map name="_collaboration"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_synchronizer_u.html"  alt="" coords="13,379,256,410"><area shape="poly" id="edge1"  alt="" coords="256,399,272,397,277,395,268,392,271,387,283,395,274,402,256,405"><area shape="rect" id="node2" href="amiq_i2c-amiq_i2c_any_unit_u.html"  alt="" coords="5,193,209,223"><area shape="poly" id="edge2"  alt="" coords="130,380,108,237,113,236,135,379"><area shape="rect" id="node5" href="amiq_i2c-amiq_i2c_env_smp_u.html"  alt="" coords="175,286,369,317"><area shape="poly" id="edge10"  alt="" coords="153,378,239,321,242,326,156,382"><area shape="rect" id="node3"  alt="" coords="57,99,156,130"><area shape="poly" id="edge3"  alt="" coords="104,193,104,143,109,143,109,193"><area shape="rect" id="node4"  alt="" coords="47,6,166,37"><area shape="poly" id="edge4"  alt="" coords="104,100,104,50,109,50,109,100"><area shape="poly" id="edge9"  alt="" coords="208,289,178,278,150,263,121,235,125,232,154,259,181,274,210,284"><area shape="rect" id="node6"  alt="" coords="259,193,511,223"><area shape="poly" id="edge11"  alt="" coords="222,289,193,272,186,260,191,246,212,232,245,222,247,228,215,237,195,250,192,260,197,268,225,284"><area shape="poly" id="edge12"  alt="" coords="276,285,288,266,305,246,335,226,337,231,308,250,292,269,281,288"><area shape="poly" id="edge13"  alt="" coords="348,284,366,274,380,260,386,249,387,236,392,237,391,250,385,263,369,278,350,289"><area shape="poly" id="edge14"  alt="" coords="369,291,435,279,460,270,475,260,479,251,477,244,457,230,460,225,481,241,485,251,479,263,462,275,436,284,370,296"><area shape="rect" id="node7"  alt="" coords="301,99,467,130"><area shape="poly" id="edge5"  alt="" coords="323,196,305,185,290,169,286,158,289,147,308,132,311,137,293,150,291,158,294,167,308,181,326,191"><area shape="poly" id="edge6"  alt="" coords="369,194,352,169,352,153,358,139,363,141,357,154,357,167,373,192"><area shape="poly" id="edge7"  alt="" coords="383,193,384,155,383,143,389,143,389,155,389,193"><area shape="poly" id="edge8"  alt="" coords="405,191,421,174,424,165,423,156,412,140,417,137,428,154,429,166,425,177,408,195">
+			</map>
+		</ul>
+	</div>
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#direct_associations">
+			<h4 class="panel-title">
+				Direct Associations Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="direct_associations" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_synchronizer_u_direct_associations.png" border="0" usemap="#_direct_associations">
+			<map name="_direct_associations"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_synchronizer_u.html"  alt="" coords="5,5,248,35"><area shape="rect" id="node2" href="amiq_i2c-amiq_i2c_env_smp_u.html"  alt="" coords="379,5,573,35"><area shape="poly" id="edge1"  alt="" coords="248,17,365,17,365,23,248,23">
+			</map>
+		</ul>
+	</div>
+
+<!-- ========= END Diagrams ======= -->
+
+
+
+<hr>
+The documentation for this unit was generated from the following file: <a href="../e/amiq_i2c_synchronizer_h.e">amiq_i2c_synchronizer_h.e</a>
+
+	</div>
+	<script src="lib/jquery/js/jquery.js"></script>
+	<script src="lib/jquery/js/jquery.scrollUp.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="js/content.js"></script>
+	<script src="js/custom.js"></script>
+
+	</body>
+</html>

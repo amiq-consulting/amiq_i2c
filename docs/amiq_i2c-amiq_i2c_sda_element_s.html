@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>amiq_i2c
+API Specification</title>
+
+	<meta name="author" content="cristian.slav">
+	<meta name="description" content="amiq_i2c API Specification">
+	<meta name="generator" content="Specador. Copyright (C) 2005-2014 AMIQ EDA ">
+	<meta name="keywords" content="e Language, HTML Documentation, Specador, AMIQ EDA, amiq_i2c API Specification">
+
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/content.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container-fluid">
+<h2 class="page-element-name">Struct <a  href="summary-amiq_i2c.html">amiq_i2c</a> :: amiq_i2c_sda_element_s</h2>
+
+
+	<br>
+	<div class="btn-group">
+				<button data-scroll="#fields" type="button" class="btn btn-default">Fields <span class="badge">2</span></button>
+		<button data-scroll="#inheritance" type="button" class="btn btn-default">Inheritance Diagram</button>
+		<button data-scroll="#collaboration" type="button" class="btn btn-default">Collaboration Diagram</button>
+		<button data-scroll="#direct_associations" type="button" class="btn btn-default">Direct Associations Diagram</button>
+
+	</div>
+	<br>
+
+<br>
+
+	<div class="panel panel-default">
+
+		<div class="panel-heading" data-toggle="collapse"
+			data-target="#collapse_class_hierarchy">
+			<h4 class="panel-title">
+				Struct Hierarchy <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+
+		<div id="collapse_class_hierarchy" class="panel-collapse collapse in">
+			<div class="panel-body">
+				<ul class="class-hierarchy">
+							<li>	 		base_struct
+
+</li>
+							<li>	 		any_struct
+
+</li>
+							<li>amiq_i2c_sda_element_s</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<pre class="comment">Basic I2C SDA element</pre>
+
+<!-- ========= START Explicit Sub Types ======= -->
+<!-- ========= END Explicit Sub Types ======= -->
+
+<!-- ========= START Fields ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#fields">
+			<h4 class="panel-title">
+				Fields <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="fields" class="list-group panel-collapse collapse in">
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>nof_cycles_from_a_scl_transition</b>
+			<a name="field_nof_cycles_from_a_scl_transition"></a> : uint
+		</span>
+		<pre class="comment">Number of cycles from SCL change when SDA will be driven with value;
+used for setting up START and STOP transitions on the SCL high clock
+and for jitter injection
+</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_value</b>
+			<a name="field_sda_value"></a> : bit
+		</span>
+		<pre class="comment">Value for SDA line after nof_cycles_from_a_scl_transition</pre>
+	</li>
+
+			
+		</ul>
+	</div>
+<!-- ========= END Fields ======= -->
+
+<!-- ========= START Ports ======= -->
+<!-- ========= END Ports ======= -->
+
+<!-- ========= START Events ======= -->
+
+	
+<!-- ========= END Events ======= -->
+
+<!-- ========= START Methods ======= -->
+
+	
+<!-- ========= END Methods ======= -->
+
+<!-- ========= START TCM ======= -->
+
+	
+<!-- ========= END TCM ======= -->
+
+<!-- ========= START Diagrams ======= -->
+
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#inheritance">
+			<h4 class="panel-title">
+				Inheritance Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="inheritance" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_sda_element_s_inheritance.png" border="0" usemap="#_inheritance">
+			<map name="_inheritance"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_sda_element_s.html"  alt="" coords="206,42,439,73"><area shape="poly" id="edge1"  alt="" coords="346,42,349,34,347,28,339,23,323,21,304,24,296,31,292,27,302,19,323,16,340,18,351,24,355,34,350,44"><area shape="rect" id="node2"  alt="" coords="6,42,125,73"><area shape="poly" id="edge2"  alt="" coords="206,60,138,60,138,55,206,55">
+			</map>
+		</ul>
+	</div>
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#collaboration">
+			<h4 class="panel-title">
+				Collaboration Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="collaboration" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_sda_element_s_collaboration.png" border="0" usemap="#_collaboration">
+			<map name="_collaboration"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_sda_element_s.html"  alt="" coords="5,99,238,130"><area shape="poly" id="edge1"  alt="" coords="238,119,254,117,259,115,250,112,253,107,264,115,256,122,239,125"><area shape="rect" id="node2"  alt="" coords="62,6,181,37"><area shape="poly" id="edge2"  alt="" coords="119,100,119,50,124,50,124,100">
+			</map>
+		</ul>
+	</div>
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#direct_associations">
+			<h4 class="panel-title">
+				Direct Associations Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="direct_associations" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_sda_element_s_direct_associations.png" border="0" usemap="#_direct_associations">
+			<map name="_direct_associations"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_sda_element_s.html"  alt="" coords="6,5,239,35">
+			</map>
+		</ul>
+	</div>
+
+<!-- ========= END Diagrams ======= -->
+
+
+
+<hr>
+The documentation for this struct was generated from the following file: <a href="../e/interface/amiq_i2c_i_structs_h.e">amiq_i2c_i_structs_h.e</a>
+
+	</div>
+	<script src="lib/jquery/js/jquery.js"></script>
+	<script src="lib/jquery/js/jquery.scrollUp.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="js/content.js"></script>
+	<script src="js/custom.js"></script>
+
+	</body>
+</html>

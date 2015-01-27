@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>amiq_i2c
+API Specification</title>
+
+	<meta name="author" content="cristian.slav">
+	<meta name="description" content="amiq_i2c API Specification">
+	<meta name="generator" content="Specador. Copyright (C) 2005-2014 AMIQ EDA ">
+	<meta name="keywords" content="e Language, HTML Documentation, Specador, AMIQ EDA, amiq_i2c API Specification">
+
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/content.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container-fluid">
+<h2 class="page-element-name">Unit <a  href="summary-amiq_i2c.html">amiq_i2c</a> :: amiq_i2c_agent_smp_u</h2>
+
+
+	<br>
+	<div class="btn-group">
+				<button data-scroll="#fields" type="button" class="btn btn-default">Fields <span class="badge">8</span></button>
+		<button data-scroll="#events" type="button" class="btn btn-default">Events <span class="badge">2</span></button>
+		<button data-scroll="#methods" type="button" class="btn btn-default">Methods <span class="badge">12</span></button>
+		<button data-scroll="#inheritance" type="button" class="btn btn-default">Inheritance Diagram</button>
+		<button data-scroll="#collaboration" type="button" class="btn btn-default">Collaboration Diagram</button>
+		<button data-scroll="#direct_associations" type="button" class="btn btn-default">Direct Associations Diagram</button>
+
+	</div>
+	<br>
+
+<br>
+
+	<div class="panel panel-default">
+
+		<div class="panel-heading" data-toggle="collapse"
+			data-target="#collapse_class_hierarchy">
+			<h4 class="panel-title">
+				Struct Hierarchy <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+
+		<div id="collapse_class_hierarchy" class="panel-collapse collapse in">
+			<div class="panel-body">
+				<ul class="class-hierarchy">
+							<li>	 		base_struct
+
+</li>
+							<li>	 		any_struct
+
+</li>
+							<li>	 		any_unit
+
+</li>
+							<li>	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_any_unit_u.html">amiq_i2c_any_unit_u</a>
+
+</li>
+							<li>	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_any_agent_unit_u.html">amiq_i2c_any_agent_unit_u</a>
+
+</li>
+							<li>amiq_i2c_agent_smp_u</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<pre class="comment">Signal map unit</pre>
+
+<!-- ========= START Explicit Sub Types ======= -->
+<!-- ========= END Explicit Sub Types ======= -->
+
+<!-- ========= START Fields ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#fields">
+			<h4 class="panel-title">
+				Fields <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="fields" class="list-group panel-collapse collapse in">
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>clock</b>
+			<a name="field_clock"></a> : any_simple_port
+		</span>
+		<pre class="comment">System clock port pointer</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>reset_n</b>
+			<a name="field_reset_n"></a> : any_simple_port
+		</span>
+		<pre class="comment">Reset port pointer</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_in</b>
+			<a name="field_scl_in"></a> : any_simple_port
+		</span>
+		<pre class="comment">Serial clock input port pointer</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_out</b>
+			<a name="field_scl_out"></a> : any_simple_port
+		</span>
+		<pre class="comment">Serial clock output port</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>scl_out_en</b>
+			<a name="field_scl_out_en"></a> : any_simple_port
+		</span>
+		<pre class="comment">Serial clock output enable port</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_in</b>
+			<a name="field_sda_in"></a> : any_simple_port
+		</span>
+		<pre class="comment">Serial data input port pointer</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_out</b>
+			<a name="field_sda_out"></a> : any_simple_port
+		</span>
+		<pre class="comment">Serial data output port</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>sda_out_en</b>
+			<a name="field_sda_out_en"></a> : any_simple_port
+		</span>
+		<pre class="comment">Serial data output enable port</pre>
+	</li>
+
+			
+		</ul>
+	</div>
+<!-- ========= END Fields ======= -->
+
+<!-- ========= START Ports ======= -->
+<!-- ========= END Ports ======= -->
+
+<!-- ========= START Events ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#events">
+			<h4 class="panel-title">
+				Events <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="events" class="list-group panel-collapse collapse in">
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>reset_fall</b>
+			<a name="event_reset_fall"></a>
+		</span>
+		<pre class="comment">Reset falling edge</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>reset_rise</b>
+			<a name="event_reset_rise"></a>
+		</span>
+		<pre class="comment">Reset rising edge</pre>
+	</li>
+
+			
+		</ul>
+	</div>
+
+	
+<!-- ========= END Events ======= -->
+
+<!-- ========= START Methods ======= -->
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#methods">
+			<h4 class="panel-title">
+				Methods <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="methods" class="list-group panel-collapse collapse in">
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>disable_outputs</b>
+				()
+			<a name="method_disable_outputs"></a> : void
+		</span>
+		<pre class="comment">Method for disabling the outputs</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>disable_scl_out</b>
+				()
+			<a name="method_disable_scl_out"></a> : void
+		</span>
+		<pre class="comment">Method to disable serial clock output</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>disable_sda_out</b>
+				()
+			<a name="method_disable_sda_out"></a> : void
+		</span>
+		<pre class="comment">Method to disable serial data output</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>drive_scl_out</b>
+				(			bit
+abit
+)
+			<a name="method_drive_scl_out"></a> : void
+		</span>
+		<pre class="comment">Method to drive a new value for serial clock output<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>abit</b> - new value of serial clock output<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>drive_sda_out</b>
+				(			bit
+abit
+)
+			<a name="method_drive_sda_out"></a> : void
+		</span>
+		<pre class="comment">Method to drive a new value for serial data output<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>abit</b> - new value of serial data output<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>enable_and_drive_scl_out</b>
+				(			bit
+abit
+)
+			<a name="method_enable_and_drive_scl_out"></a> : void
+		</span>
+		<pre class="comment">Method to enable drive a new value for serial clock output<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>abit</b> - new value of serial clock output<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>enable_and_drive_sda_out</b>
+				(			bit
+abit
+)
+			<a name="method_enable_and_drive_sda_out"></a> : void
+		</span>
+		<pre class="comment">Method to enable drive a new value for serial data output<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>abit</b> - new value of serial data output<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>enable_scl_out</b>
+				()
+			<a name="method_enable_scl_out"></a> : void
+		</span>
+		<pre class="comment">Method to enable serial clock output</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>enable_sda_out</b>
+				()
+			<a name="method_enable_sda_out"></a> : void
+		</span>
+		<pre class="comment">Method to enable serial data output</pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>get_scl_in</b>
+				()
+			<a name="method_get_scl_in"></a> : bit
+		</span>
+		<pre class="comment">Get the value of the serial clock input<br><br><b>Returns:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;serial clock input<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>get_sda_in</b>
+				()
+			<a name="method_get_sda_in"></a> : bit
+		</span>
+		<pre class="comment">Get the value of the serial data input<br><br><b>Returns:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;serial data input<br></pre>
+	</li>
+	<li class="list-group-item">
+		
+		<span class="signature">
+			<b>is_sda_in_high</b>
+				()
+			<a name="method_is_sda_in_high"></a> : bool
+		</span>
+		<pre class="comment">Method to determine is serial data input is high<br><br><b>Returns:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;true is serial data input is '1'<br></pre>
+	</li>
+
+			
+		</ul>
+	</div>
+
+	
+<!-- ========= END Methods ======= -->
+
+<!-- ========= START TCM ======= -->
+
+	
+<!-- ========= END TCM ======= -->
+
+<!-- ========= START Diagrams ======= -->
+
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#inheritance">
+			<h4 class="panel-title">
+				Inheritance Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="inheritance" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_agent_smp_u_inheritance.png" border="0" usemap="#_inheritance">
+			<map name="_inheritance"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_agent_smp_u.html"  alt="" coords="1014,42,1229,73"><area shape="poly" id="edge1"  alt="" coords="1143,42,1146,34,1144,28,1136,23,1121,21,1104,24,1096,31,1093,27,1102,19,1121,16,1138,18,1148,25,1151,34,1147,44"><area shape="rect" id="node3" href="amiq_i2c-amiq_i2c_any_agent_unit_u.html"  alt="" coords="670,42,933,73"><area shape="poly" id="edge2"  alt="" coords="1014,60,947,60,947,55,1014,55"><area shape="rect" id="node2" href="amiq_i2c-amiq_i2c_agent_smp_u.html"  alt="" coords="1310,42,1525,73"><area shape="poly" id="edge6"  alt="" coords="1310,60,1243,60,1243,55,1310,55"><area shape="rect" id="node4" href="amiq_i2c-amiq_i2c_any_unit_u.html"  alt="" coords="385,42,589,73"><area shape="poly" id="edge3"  alt="" coords="670,60,602,60,602,55,670,55"><area shape="rect" id="node5"  alt="" coords="205,42,304,73"><area shape="poly" id="edge4"  alt="" coords="384,60,318,60,318,55,384,55"><area shape="rect" id="node6"  alt="" coords="6,42,125,73"><area shape="poly" id="edge5"  alt="" coords="205,60,139,60,139,55,205,55">
+			</map>
+		</ul>
+	</div>
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#collaboration">
+			<h4 class="panel-title">
+				Collaboration Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="collaboration" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_agent_smp_u_collaboration.png" border="0" usemap="#_collaboration">
+			<map name="_collaboration"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_agent_smp_u.html"  alt="" coords="645,379,859,410"><area shape="poly" id="edge1"  alt="" coords="859,399,875,397,880,395,872,391,874,387,885,395,877,402,860,405"><area shape="rect" id="node3" href="amiq_i2c-amiq_i2c_any_agent_unit_u.html"  alt="" coords="31,286,294,317"><area shape="poly" id="edge2"  alt="" coords="644,390,506,378,356,357,283,341,217,323,218,317,284,336,356,352,507,373,645,385"><area shape="rect" id="node7"  alt="" coords="733,286,985,317"><area shape="poly" id="edge31"  alt="" coords="645,395,551,392,463,383,428,377,403,368,390,356,390,348,396,339,411,331,438,324,518,313,719,302,719,308,519,318,439,329,413,336,399,343,396,349,395,353,406,363,430,371,464,378,552,386,645,390"><area shape="poly" id="edge32"  alt="" coords="644,388,592,381,547,371,518,358,513,350,517,339,543,328,591,319,719,307,719,313,591,325,544,333,521,343,518,349,522,354,549,366,593,375,645,382"><area shape="poly" id="edge33"  alt="" coords="670,382,651,376,638,366,632,354,638,340,651,330,670,322,719,310,720,316,671,327,654,334,642,343,637,354,642,363,654,371,672,377"><area shape="poly" id="edge34"  alt="" coords="746,380,744,360,751,340,772,321,776,325,756,343,750,361,751,379"><area shape="poly" id="edge35"  alt="" coords="789,377,809,367,827,353,846,327,850,330,831,357,812,371,791,382"><area shape="poly" id="edge36"  alt="" coords="859,383,918,371,940,363,954,353,958,344,956,337,936,323,939,319,960,334,964,345,958,356,943,368,919,376,860,388"><area shape="poly" id="edge37"  alt="" coords="859,391,917,388,972,381,1018,370,1035,362,1046,353,1054,336,1047,325,1027,316,998,309,999,304,1029,311,1051,321,1059,336,1050,356,1037,367,1020,375,973,386,917,393,860,396"><area shape="poly" id="edge38"  alt="" coords="859,388,1039,376,1112,366,1136,360,1149,353,1152,346,1148,339,1115,327,1062,317,998,311,999,306,1063,312,1117,321,1151,335,1157,345,1153,356,1138,365,1113,371,1040,381,860,393"><area shape="rect" id="node2" href="amiq_i2c-amiq_i2c_agent_smp_u.html"  alt="" coords="645,473,859,503"><area shape="poly" id="edge6"  alt="" coords="749,473,749,423,755,423,755,473"><area shape="rect" id="node4" href="amiq_i2c-amiq_i2c_any_unit_u.html"  alt="" coords="5,193,209,223"><area shape="poly" id="edge3"  alt="" coords="148,288,128,263,115,237,119,234,133,260,152,285"><area shape="rect" id="node5"  alt="" coords="57,99,156,130"><area shape="poly" id="edge4"  alt="" coords="104,193,104,143,109,143,109,193"><area shape="rect" id="node6"  alt="" coords="47,6,166,37"><area shape="poly" id="edge5"  alt="" coords="104,100,104,50,109,50,109,100"><area shape="rect" id="node8"  alt="" coords="806,193,973,223"><area shape="poly" id="edge7"  alt="" coords="732,300,386,288,239,277,192,271,169,263,165,255,169,246,195,238,250,231,417,220,792,208,792,214,418,225,250,236,196,243,172,250,170,255,172,259,193,266,240,272,386,282,733,295"><area shape="poly" id="edge8"  alt="" coords="732,304,586,303,430,297,301,285,256,276,231,263,228,255,232,246,255,238,303,232,453,221,792,209,792,214,453,227,304,237,256,243,235,250,233,255,235,259,258,271,301,280,431,292,586,297,732,299"><area shape="poly" id="edge9"  alt="" coords="732,303,602,301,466,295,354,283,316,274,294,263,290,255,294,246,319,234,365,224,496,212,652,207,792,206,792,211,652,212,497,218,365,230,321,239,298,250,296,255,298,259,318,269,355,278,467,289,602,295,732,298"><area shape="poly" id="edge10"  alt="" coords="732,302,618,298,502,292,407,281,375,273,357,263,353,255,357,246,379,235,418,226,532,215,667,209,792,207,792,212,667,214,532,220,419,232,381,240,361,250,358,255,361,260,377,268,408,276,503,287,618,293,732,296"><area shape="poly" id="edge11"  alt="" coords="732,300,539,289,461,279,435,272,419,263,416,255,419,246,438,236,471,229,567,218,792,208,792,213,568,223,472,234,440,241,423,250,421,255,423,260,437,267,462,273,539,284,733,295"><area shape="poly" id="edge12"  alt="" coords="732,303,637,299,548,291,514,284,489,275,477,262,482,246,497,238,524,231,603,220,792,209,792,215,604,226,525,236,499,243,486,250,482,261,492,270,515,279,549,285,637,294,733,297"><area shape="poly" id="edge13"  alt="" coords="732,299,658,294,592,285,549,270,540,259,545,246,557,239,578,233,639,223,792,211,792,216,640,229,579,238,559,244,549,250,545,258,552,266,593,280,658,289,732,294"><area shape="poly" id="edge14"  alt="" coords="732,294,680,287,636,278,608,265,603,256,607,246,620,236,637,228,682,217,737,210,792,207,792,212,737,216,683,222,639,233,622,241,611,250,609,256,612,261,638,273,681,282,733,289"><area shape="poly" id="edge15"  alt="" coords="732,300,698,294,673,284,665,277,661,268,663,258,670,246,689,233,719,223,792,212,793,217,720,229,692,238,674,250,668,260,667,267,669,274,676,280,700,289,733,295"><area shape="poly" id="edge16"  alt="" coords="761,289,744,282,731,273,727,261,733,246,756,232,792,221,793,226,758,237,737,250,732,261,735,270,746,278,763,284"><area shape="poly" id="edge17"  alt="" coords="822,289,797,271,792,260,795,247,815,227,819,231,800,249,797,259,801,268,825,284"><area shape="poly" id="edge18"  alt="" coords="854,286,854,268,857,247,865,232,870,235,863,249,859,268,859,286"><area shape="poly" id="edge19"  alt="" coords="872,285,890,260,892,236,897,237,894,262,877,288"><area shape="poly" id="edge20"  alt="" coords="901,284,917,274,930,260,931,247,921,233,926,230,936,245,934,262,921,278,904,289"><area shape="poly" id="edge21"  alt="" coords="937,284,954,274,968,260,972,251,970,244,952,230,955,226,974,241,977,252,973,263,958,278,939,289"><area shape="poly" id="edge22"  alt="" coords="948,284,986,273,1009,260,1013,249,1010,240,1000,233,985,226,987,221,1003,228,1015,237,1019,249,1013,263,988,278,950,289"><area shape="poly" id="edge23"  alt="" coords="984,285,1026,274,1041,267,1051,260,1057,250,1058,242,1054,236,1046,230,1020,221,986,215,987,210,1021,216,1049,225,1058,232,1063,241,1062,252,1055,263,1044,272,1028,279,986,290"><area shape="poly" id="edge24"  alt="" coords="985,291,1053,280,1079,271,1095,260,1098,255,1095,250,1079,239,1054,230,986,218,987,213,1055,225,1082,234,1099,246,1103,255,1099,263,1081,276,1055,285,986,297"><area shape="poly" id="edge25"  alt="" coords="985,296,1077,284,1113,274,1135,260,1138,253,1133,246,1099,234,1046,224,986,218,986,213,1047,219,1100,229,1136,242,1143,252,1139,263,1115,279,1078,290,985,301"><area shape="poly" id="edge26"  alt="" coords="985,290,1107,278,1153,269,1175,260,1178,251,1171,244,1127,230,1060,221,986,215,987,210,1060,215,1128,225,1174,239,1183,250,1179,263,1154,274,1108,283,985,295"><area shape="poly" id="edge27"  alt="" coords="985,292,1131,280,1187,271,1215,260,1219,249,1209,241,1187,233,1154,226,1073,217,987,213,987,208,1073,212,1155,221,1188,228,1212,236,1224,248,1219,263,1189,276,1132,285,985,297"><area shape="poly" id="edge28"  alt="" coords="985,293,1156,282,1223,272,1245,266,1257,259,1261,253,1261,248,1248,238,1221,229,1182,223,1086,215,986,212,986,206,1086,209,1183,217,1222,224,1251,233,1265,246,1266,254,1261,263,1247,271,1224,277,1157,287,985,299"><area shape="poly" id="edge29"  alt="" coords="985,295,1180,284,1259,274,1284,267,1298,260,1300,255,1298,250,1284,243,1258,236,1178,225,987,214,987,209,1179,220,1259,231,1286,238,1302,246,1306,255,1302,263,1286,272,1260,279,1181,289,985,300"><area shape="poly" id="edge30"  alt="" coords="985,296,1204,286,1293,275,1322,268,1338,260,1340,255,1338,250,1322,242,1292,234,1201,224,986,213,986,208,1202,218,1293,229,1324,237,1342,246,1346,255,1342,263,1324,273,1294,280,1204,291,985,301">
+			</map>
+		</ul>
+	</div>
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#direct_associations">
+			<h4 class="panel-title">
+				Direct Associations Diagram <span class="glyphicon glyphicon-chevron-right"></span>
+			</h4>
+		</div>
+		<ul id="direct_associations" class="list-group panel-collapse collapse">
+			<img src="amiq_i2c-amiq_i2c_agent_smp_u_direct_associations.png" border="0" usemap="#_direct_associations">
+			<map name="_direct_associations"> 
+				<area shape="rect" id="node1" href="amiq_i2c-amiq_i2c_agent_smp_u.html"  alt="" coords="6,146,221,177"><area shape="rect" id="node3"  alt="" coords="382,146,634,177"><area shape="poly" id="edge1"  alt="" coords="202,144,219,131,227,120,231,108,229,83,229,58,233,45,244,34,272,18,299,15,326,22,358,34,398,53,434,80,488,134,485,138,431,84,396,58,356,38,325,27,298,21,274,23,247,38,238,48,234,59,235,83,236,109,232,122,223,135,205,149"><area shape="poly" id="edge2"  alt="" coords="199,144,219,131,228,119,230,105,233,91,244,78,273,64,299,63,358,77,392,89,424,104,478,137,475,141,421,109,390,94,357,83,299,68,274,69,247,82,238,93,235,106,233,121,223,135,202,149"><area shape="poly" id="edge3"  alt="" coords="175,144,220,131,245,121,300,117,355,120,407,129,452,140,450,145,406,134,354,125,300,122,246,127,222,136,177,149"><area shape="poly" id="edge4"  alt="" coords="221,159,368,159,368,164,221,164"><area shape="poly" id="edge5"  alt="" coords="206,173,246,177,301,180,357,177,389,175,389,180,358,183,301,185,245,183,205,179"><area shape="poly" id="edge6"  alt="" coords="153,174,197,188,246,199,301,204,357,199,405,190,450,178,451,183,406,195,358,204,301,209,245,204,196,193,151,179"><area shape="poly" id="edge7"  alt="" coords="138,174,187,201,246,223,301,231,357,223,416,204,468,180,470,185,418,209,358,228,301,236,245,228,184,206,136,179"><area shape="poly" id="edge8"  alt="" coords="131,174,180,215,212,235,246,249,277,258,301,260,326,257,357,249,391,237,423,220,477,183,480,187,426,224,393,242,358,255,327,262,301,265,276,263,244,255,209,239,176,219,128,178"><area shape="rect" id="node2" href="amiq_i2c-amiq_i2c_agent_smp_u.html"  alt="" coords="6,91,221,122">
+			</map>
+		</ul>
+	</div>
+
+<!-- ========= END Diagrams ======= -->
+
+
+
+<hr>
+The documentation for this unit was generated from the following file: <a href="../e/amiq_i2c_agent_smp_h.e">amiq_i2c_agent_smp_h.e</a>
+
+	</div>
+	<script src="lib/jquery/js/jquery.js"></script>
+	<script src="lib/jquery/js/jquery.scrollUp.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="js/content.js"></script>
+	<script src="js/custom.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,13 @@
++dvt_setenv+SPECMAN_PATH=${AMIQ_I2C_LIB}
+${AMIQ_I2C_LIB}/amiq_i2c/e/amiq_i2c_top.e
++dvt_test+${AMIQ_I2C_LIB}/amiq_i2c/examples/ms/tests/amiq_i2c_ex_ms_test_basic.e
++dvt_test+${AMIQ_I2C_LIB}/amiq_i2c/examples/ms/tests/amiq_i2c_ex_ms_test_cbus.e
++dvt_test+${AMIQ_I2C_LIB}/amiq_i2c/examples/ms/tests/amiq_i2c_ex_ms_test_device_id.e
++dvt_test+${AMIQ_I2C_LIB}/amiq_i2c/examples/ms/tests/amiq_i2c_ex_ms_test_general_call.e
++dvt_test+${AMIQ_I2C_LIB}/amiq_i2c/examples/ms/tests/amiq_i2c_ex_ms_test_start_byte.e
++dvt_test+${AMIQ_I2C_LIB}/amiq_i2c/examples/ms/tests/amiq_i2c_ex_ms_test_hw_general_call.e
++dvt_test+${AMIQ_I2C_LIB}/amiq_i2c/examples/ms/tests/amiq_i2c_ex_ms_test_random.e
++dvt_test+${AMIQ_I2C_LIB}/amiq_i2c/examples/ms/tests/amiq_i2c_ex_ms_test_reserved_addr.e
++dvt_test+${AMIQ_I2C_LIB}/amiq_i2c/examples/ms/tests/amiq_i2c_ex_ms_test_custom_item.e
++dvt_test+${AMIQ_I2C_LIB}/amiq_i2c/examples/multi/tests/amiq_i2c_ex_multi_masters_multi_slaves_test_random.e
++dvt_test+${AMIQ_I2C_LIB}/amiq_i2c/examples/vr_ad/tests/amiq_i2c_ex_vr_ad_test_basic.e

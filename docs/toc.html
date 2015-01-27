@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>amiq_i2c
+API Specification</title>
+
+	<meta name="author" content="cristian.slav">
+	<meta name="description" content="amiq_i2c API Specification">
+	<meta name="generator" content="Specador. Copyright (C) 2005-2014 AMIQ EDA ">
+	<meta name="keywords" content="e Language, HTML Documentation, Specador, AMIQ EDA, amiq_i2c API Specification">
+
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="lib/select2/css/select2.css" rel="stylesheet">
+	<link href="lib/select2/css/select2-bootstrap.css" rel="stylesheet">
+	<link href="css/toc.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container-fluid">
+			<h2>amiq_i2c</h2>
+			<h4>API Specification</h4>
+
+	<hr>
+
+	<div class="input-group select2-bootstrap-prepend">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button"
+					data-select2-open="toc-search">
+					<span class="glyphicon glyphicon-search"></span>
+				</button>
+			</span>
+			<select id="toc-search" class="form-control select2">
+				<option></option>
+	<optgroup label="Scalars">
+		    	<option value="main-amiq_i2c_ex_virtual_seq_kind.html">amiq_i2c_ex_virtual_seq_kind</option>
+		    	<option value="main-amiq_i2c_logic_0_flavor_t.html">amiq_i2c_logic_0_flavor_t</option>
+		    	<option value="main-amiq_i2c_logic_1_flavor_t.html">amiq_i2c_logic_1_flavor_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_addr_cmp_t.html">amiq_i2c::amiq_i2c_addr_cmp_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_addr_mode_t.html">amiq_i2c::amiq_i2c_addr_mode_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_agent_kind_t.html">amiq_i2c::amiq_i2c_agent_kind_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_arbitration_status_t.html">amiq_i2c::amiq_i2c_arbitration_status_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_bus_is_busy_beh_t.html">amiq_i2c::amiq_i2c_bus_is_busy_beh_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_cs_decode_byte_t.html">amiq_i2c::amiq_i2c_cs_decode_byte_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_cs_decode_phase_t.html">amiq_i2c::amiq_i2c_cs_decode_phase_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_cs_decode_symbol_t.html">amiq_i2c::amiq_i2c_cs_decode_symbol_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_env_name_t.html">amiq_i2c::amiq_i2c_env_name_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_first_byte_info_t.html">amiq_i2c::amiq_i2c_first_byte_info_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_lost_arb_beh_t.html">amiq_i2c::amiq_i2c_lost_arb_beh_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_m_seq_kind.html">amiq_i2c::amiq_i2c_m_seq_kind</option>
+		    	<option value="amiq_i2c-amiq_i2c_position_2_interval_t.html">amiq_i2c::amiq_i2c_position_2_interval_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_rw_t.html">amiq_i2c::amiq_i2c_rw_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_s_seq_kind.html">amiq_i2c::amiq_i2c_s_seq_kind</option>
+		    	<option value="amiq_i2c-amiq_i2c_sda_t.html">amiq_i2c::amiq_i2c_sda_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_speed_mode_t.html">amiq_i2c::amiq_i2c_speed_mode_t</option>
+		    	<option value="main-vr_ad_access_kind.html">vr_ad_access_kind</option>
+		    	<option value="main-vr_ad_access_order.html">vr_ad_access_order</option>
+		    	<option value="main-vr_ad_access_t.html">vr_ad_access_t</option>
+		    	<option value="main-vr_ad_addr_int.html">vr_ad_addr_int</option>
+		    	<option value="main-vr_ad_addr_t.html">vr_ad_addr_t</option>
+		    	<option value="main-vr_ad_data_int.html">vr_ad_data_int</option>
+		    	<option value="main-vr_ad_data_t.html">vr_ad_data_t</option>
+		    	<option value="main-vr_ad_field_attribute_t.html">vr_ad_field_attribute_t</option>
+		    	<option value="main-vr_ad_indirect_mode.html">vr_ad_indirect_mode</option>
+		    	<option value="main-vr_ad_map_kind.html">vr_ad_map_kind</option>
+		    	<option value="main-vr_ad_mem_default_value_t.html">vr_ad_mem_default_value_t</option>
+		    	<option value="main-vr_ad_mem_kind.html">vr_ad_mem_kind</option>
+		    	<option value="main-vr_ad_mem_obj_kind.html">vr_ad_mem_obj_kind</option>
+		    	<option value="main-vr_ad_op_mode.html">vr_ad_op_mode</option>
+		    	<option value="main-vr_ad_proxy_to_external_kind.html">vr_ad_proxy_to_external_kind</option>
+		    	<option value="main-vr_ad_reg_file_kind.html">vr_ad_reg_file_kind</option>
+		    	<option value="main-vr_ad_reg_kind.html">vr_ad_reg_kind</option>
+		    	<option value="main-vr_ad_reset_severity_t.html">vr_ad_reset_severity_t</option>
+		    	<option value="main-vr_ad_rw_t.html">vr_ad_rw_t</option>
+		    	<option value="main-vr_ad_rw_todo_t.html">vr_ad_rw_todo_t</option>
+		    	<option value="main-vr_ad_sc_reg_api_kind.html">vr_ad_sc_reg_api_kind</option>
+		    	<option value="main-vr_ad_sequence_kind.html">vr_ad_sequence_kind</option>
+		    	<option value="main-vr_ad_set_kind.html">vr_ad_set_kind</option>
+		    	<option value="main-vr_ad_set_policy_t.html">vr_ad_set_policy_t</option>
+		    	<option value="main-vr_ad_size_t.html">vr_ad_size_t</option>
+		    	<option value="main-vr_ad_space_kind.html">vr_ad_space_kind</option>
+		    	<option value="main-vr_ad_tlm_res.html">vr_ad_tlm_res</option>
+		    	<option value="main-vr_set_base_type32.html">vr_set_base_type32</option>
+		    	<option value="main-vr_set_base_type_inf.html">vr_set_base_type_inf</option>
+		    	<option value="main-vr_set_strategy_type.html">vr_set_strategy_type</option>
+		    	<option value="main-vt_slice_navigation_kind.html">vt_slice_navigation_kind</option>
+	</optgroup>
+
+	<optgroup label="Units">
+		    	<option value="amiq_i2c-amiq_i2c_agent_config_u.html">amiq_i2c::amiq_i2c_agent_config_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_agent_monitor_u.html">amiq_i2c::amiq_i2c_agent_monitor_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_agent_smp_u.html">amiq_i2c::amiq_i2c_agent_smp_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_agent_u.html">amiq_i2c::amiq_i2c_agent_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_any_agent_unit_u.html">amiq_i2c::amiq_i2c_any_agent_unit_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_any_unit_u.html">amiq_i2c::amiq_i2c_any_unit_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_bfm_u.html">amiq_i2c::amiq_i2c_bfm_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_bus_monitor_u.html">amiq_i2c::amiq_i2c_bus_monitor_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_driver_u.html">amiq_i2c::amiq_i2c_driver_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_env_config_u.html">amiq_i2c::amiq_i2c_env_config_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_env_smp_u.html">amiq_i2c::amiq_i2c_env_smp_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_env_u.html">amiq_i2c::amiq_i2c_env_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_m_driver_u.html">amiq_i2c::amiq_i2c_m_driver_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_s_driver_u.html">amiq_i2c::amiq_i2c_s_driver_u</option>
+		    	<option value="amiq_i2c-amiq_i2c_synchronizer_u.html">amiq_i2c::amiq_i2c_synchronizer_u</option>
+	</optgroup>
+
+	<optgroup label="Structs">
+		    	<option value="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c::amiq_i2c_item_s</option>
+		    	<option value="amiq_i2c-amiq_i2c_mp_byte_t.html">amiq_i2c::amiq_i2c_mp_byte_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_mp_item_t.html">amiq_i2c::amiq_i2c_mp_item_t</option>
+		    	<option value="amiq_i2c-amiq_i2c_scl_def_s.html">amiq_i2c::amiq_i2c_scl_def_s</option>
+		    	<option value="amiq_i2c-amiq_i2c_sda_def_s.html">amiq_i2c::amiq_i2c_sda_def_s</option>
+		    	<option value="amiq_i2c-amiq_i2c_sda_element_s.html">amiq_i2c::amiq_i2c_sda_element_s</option>
+	</optgroup>
+
+	<optgroup label="Sequences">
+		    	<option value="amiq_i2c-amiq_i2c_m_seq.html">amiq_i2c::amiq_i2c_m_seq</option>
+		    	<option value="amiq_i2c-amiq_i2c_s_seq.html">amiq_i2c::amiq_i2c_s_seq</option>
+	</optgroup>
+
+	<optgroup label="Defines">
+		    	<option value="summary-macro.html#macros_null_SET_STR_MAX">SET_STR_MAX</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_ADDRESS_WIDTH">VR_AD_ADDRESS_WIDTH</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_CONST_WHEN">VR_AD_CONST_WHEN</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_DATA_WIDTH">VR_AD_DATA_WIDTH</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_LOAD_NOT_COMPILED">VR_AD_LOAD_NOT_COMPILED</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_ON_SETUP_STATIC_INFO">VR_AD_ON_SETUP_STATIC_INFO</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_RSD_MAIN_SEQUENCE">VR_AD_RSD_MAIN_SEQUENCE</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_STANDARD_DATA_WIDTH">VR_AD_STANDARD_DATA_WIDTH</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_10_2_OR_LATER">VR_AD_VERSION_10_2_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_11_1_OR_LATER">VR_AD_VERSION_11_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_12_1_OR_LATER">VR_AD_VERSION_12_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_12__OR_LATER">VR_AD_VERSION_12__OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_2_0_OR_LATER">VR_AD_VERSION_2_0_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_2_1_OR_LATER">VR_AD_VERSION_2_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_2_2_OR_LATER">VR_AD_VERSION_2_2_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_2_3_OR_LATER">VR_AD_VERSION_2_3_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_2_4_OR_LATER">VR_AD_VERSION_2_4_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_6_1">VR_AD_VERSION_6_1</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_6_1_1">VR_AD_VERSION_6_1_1</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_6_1_1_OR_LATER">VR_AD_VERSION_6_1_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_6_1_OR_LATER">VR_AD_VERSION_6_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VT_TABLE">VR_AD_VT_TABLE</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_2_0_OR_LATER">VR_SETS_VERSION_2_0_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_2_1_OR_LATER">VR_SETS_VERSION_2_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_2_2_OR_LATER">VR_SETS_VERSION_2_2_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_2_3_OR_LATER">VR_SETS_VERSION_2_3_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_2_4_OR_LATER">VR_SETS_VERSION_2_4_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_6_1">VR_SETS_VERSION_6_1</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_6_1_OR_LATER">VR_SETS_VERSION_6_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_MAXIMUM_SCL_LOW_CLOCK_WIDTH">amiq_i2c::AMIQ_I2C_MAXIMUM_SCL_LOW_CLOCK_WIDTH</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_MAX_STRETCH">amiq_i2c::AMIQ_I2C_MAX_STRETCH</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_MINIMUM_SCL_LOW_CLOCK_WIDTH">amiq_i2c::AMIQ_I2C_MINIMUM_SCL_LOW_CLOCK_WIDTH</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_CBUS_ADDRESS">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_CBUS_ADDRESS</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_DIFFERENT_BUS_FORMAT">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_DIFFERENT_BUS_FORMAT</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_01">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_01</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_GENERAL_CALL_AND_START_BYTE">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_GENERAL_CALL_AND_START_BYTE</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_HS_MODE_MASTER_CODE">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_HS_MODE_MASTER_CODE</option>
+		    	<option value="summary-macro.html#macros_null_vr_set_base_type32_MAX">vr_set_base_type32_MAX</option>
+		    	<option value="summary-macro.html#macros_null_vr_set_base_type32_MIN">vr_set_base_type32_MIN</option>
+	</optgroup>
+
+	<optgroup label="Define as">
+		    	<option value="summary-macro.html#macros_action___etools__NON_STANDARD__FOR_EACH_STARTING_FROM'action">__etools__NON_STANDARD__FOR_EACH_STARTING_FROM'action</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace1'command">uvm_vr_ad_trace1'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace2'command">uvm_vr_ad_trace2'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace3'command">uvm_vr_ad_trace3'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace4'command">uvm_vr_ad_trace4'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg10'command">uvm_vr_ad_trace_msg10'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg11'command">uvm_vr_ad_trace_msg11'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg12'command">uvm_vr_ad_trace_msg12'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg13'command">uvm_vr_ad_trace_msg13'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg14'command">uvm_vr_ad_trace_msg14'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg5'command">uvm_vr_ad_trace_msg5'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg6'command">uvm_vr_ad_trace_msg6'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg7'command">uvm_vr_ad_trace_msg7'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg8'command">uvm_vr_ad_trace_msg8'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg9'command">uvm_vr_ad_trace_msg9'command</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_create_reg_cov'command">vr_ad_create_reg_cov'command</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_debug_def_reg'action">vr_ad_debug_def_reg'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_message'action">vr_ad_message'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_msg_info_u'action">vr_ad_msg_info_u'action</option>
+		    	<option value="summary-macro.html#macros_struct_member_vr_ad_mvl_bits'struct_member">vr_ad_mvl_bits'struct_member</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_read_mem_obj'action">vr_ad_read_mem_obj'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_read_mem_obj_op'action">vr_ad_read_mem_obj_op'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_read_mem_op'action">vr_ad_read_mem_op'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_read_mem_value'action">vr_ad_read_mem_value'action</option>
+		    	<option value="summary-macro.html#macros_struct_member_vr_ad_reg_list'struct_member">vr_ad_reg_list'struct_member</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_show_map_report'command">vr_ad_show_map_report'command</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_show_map_vt'command">vr_ad_show_map_vt'command</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_show_maps'command">vr_ad_show_maps'command</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_show_maps_vt'command">vr_ad_show_maps_vt'command</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_trace_aloc'command">vr_ad_trace_aloc'command</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_write_mem_obj'action">vr_ad_write_mem_obj'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_write_mem_obj_op'action">vr_ad_write_mem_obj_op'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_write_mem_op'action">vr_ad_write_mem_op'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_write_mem_value'action">vr_ad_write_mem_value'action</option>
+	</optgroup>
+
+	<optgroup label="Define as computed">
+		    	<option value="summary-macro.html#macros_statement_vr_ad_debug_def_reg'statement">vr_ad_debug_def_reg'statement</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_info1_new'action">vr_ad_info1_new'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_info2_new'action">vr_ad_info2_new'action</option>
+		    	<option value="summary-macro.html#macros_statement_vr_ad_mem_def_imp'statement">vr_ad_mem_def_imp'statement</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_modify_reg_field1'action">vr_ad_modify_reg_field1'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_read_reg'action">vr_ad_read_reg'action</option>
+		    	<option value="summary-macro.html#macros_statement_vr_ad_reg_def_imp'statement">vr_ad_reg_def_imp'statement</option>
+		    	<option value="summary-macro.html#macros_statement_vr_ad_sc_ports'statement">vr_ad_sc_ports'statement</option>
+		    	<option value="summary-macro.html#macros_statement_vr_ad_ud_sc_model'statement">vr_ad_ud_sc_model'statement</option>
+		    	<option value="summary-macro.html#macros_statement_vr_ad_ud_sc_ports'statement">vr_ad_ud_sc_ports'statement</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_write_reg'action">vr_ad_write_reg'action</option>
+	</optgroup>
+
+	<optgroup label="Macros preprocessing">
+		    	<option value="summary-macro.html#macros_null_SET_STR_MAX">SET_STR_MAX</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_ADDRESS_WIDTH">VR_AD_ADDRESS_WIDTH</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_CONST_WHEN">VR_AD_CONST_WHEN</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_DATA_WIDTH">VR_AD_DATA_WIDTH</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_LOAD_NOT_COMPILED">VR_AD_LOAD_NOT_COMPILED</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_ON_SETUP_STATIC_INFO">VR_AD_ON_SETUP_STATIC_INFO</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_RSD_MAIN_SEQUENCE">VR_AD_RSD_MAIN_SEQUENCE</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_STANDARD_DATA_WIDTH">VR_AD_STANDARD_DATA_WIDTH</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_10_2_OR_LATER">VR_AD_VERSION_10_2_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_11_1_OR_LATER">VR_AD_VERSION_11_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_12_1_OR_LATER">VR_AD_VERSION_12_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_12__OR_LATER">VR_AD_VERSION_12__OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_2_0_OR_LATER">VR_AD_VERSION_2_0_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_2_1_OR_LATER">VR_AD_VERSION_2_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_2_2_OR_LATER">VR_AD_VERSION_2_2_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_2_3_OR_LATER">VR_AD_VERSION_2_3_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_2_4_OR_LATER">VR_AD_VERSION_2_4_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_6_1">VR_AD_VERSION_6_1</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_6_1_1">VR_AD_VERSION_6_1_1</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_6_1_1_OR_LATER">VR_AD_VERSION_6_1_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VERSION_6_1_OR_LATER">VR_AD_VERSION_6_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_AD_VT_TABLE">VR_AD_VT_TABLE</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_2_0_OR_LATER">VR_SETS_VERSION_2_0_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_2_1_OR_LATER">VR_SETS_VERSION_2_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_2_2_OR_LATER">VR_SETS_VERSION_2_2_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_2_3_OR_LATER">VR_SETS_VERSION_2_3_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_2_4_OR_LATER">VR_SETS_VERSION_2_4_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_6_1">VR_SETS_VERSION_6_1</option>
+		    	<option value="summary-macro.html#macros_null_VR_SETS_VERSION_6_1_OR_LATER">VR_SETS_VERSION_6_1_OR_LATER</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_MAXIMUM_SCL_LOW_CLOCK_WIDTH">amiq_i2c::AMIQ_I2C_MAXIMUM_SCL_LOW_CLOCK_WIDTH</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_MAX_STRETCH">amiq_i2c::AMIQ_I2C_MAX_STRETCH</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_MINIMUM_SCL_LOW_CLOCK_WIDTH">amiq_i2c::AMIQ_I2C_MINIMUM_SCL_LOW_CLOCK_WIDTH</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_CBUS_ADDRESS">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_CBUS_ADDRESS</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_DIFFERENT_BUS_FORMAT">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_DIFFERENT_BUS_FORMAT</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_01">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_01</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_GENERAL_CALL_AND_START_BYTE">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_GENERAL_CALL_AND_START_BYTE</option>
+		    	<option value="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_HS_MODE_MASTER_CODE">amiq_i2c::AMIQ_I2C_RSVD_ADDR_FOR_HS_MODE_MASTER_CODE</option>
+		    	<option value="summary-macro.html#macros_null_vr_set_base_type32_MAX">vr_set_base_type32_MAX</option>
+		    	<option value="summary-macro.html#macros_null_vr_set_base_type32_MIN">vr_set_base_type32_MIN</option>
+	</optgroup>
+
+	<optgroup label="Macros statement">
+		    	<option value="summary-macro.html#macros_statement_vr_ad_debug_def_reg'statement">vr_ad_debug_def_reg'statement</option>
+		    	<option value="summary-macro.html#macros_statement_vr_ad_mem_def_imp'statement">vr_ad_mem_def_imp'statement</option>
+		    	<option value="summary-macro.html#macros_statement_vr_ad_reg_def_imp'statement">vr_ad_reg_def_imp'statement</option>
+		    	<option value="summary-macro.html#macros_statement_vr_ad_sc_ports'statement">vr_ad_sc_ports'statement</option>
+		    	<option value="summary-macro.html#macros_statement_vr_ad_ud_sc_model'statement">vr_ad_ud_sc_model'statement</option>
+		    	<option value="summary-macro.html#macros_statement_vr_ad_ud_sc_ports'statement">vr_ad_ud_sc_ports'statement</option>
+	</optgroup>
+
+	<optgroup label="Macros struct member">
+		    	<option value="summary-macro.html#macros_struct_member_vr_ad_mvl_bits'struct_member">vr_ad_mvl_bits'struct_member</option>
+		    	<option value="summary-macro.html#macros_struct_member_vr_ad_reg_list'struct_member">vr_ad_reg_list'struct_member</option>
+	</optgroup>
+
+	<optgroup label="Macros action">
+		    	<option value="summary-macro.html#macros_action___etools__NON_STANDARD__FOR_EACH_STARTING_FROM'action">__etools__NON_STANDARD__FOR_EACH_STARTING_FROM'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_debug_def_reg'action">vr_ad_debug_def_reg'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_info1_new'action">vr_ad_info1_new'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_info2_new'action">vr_ad_info2_new'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_message'action">vr_ad_message'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_modify_reg_field1'action">vr_ad_modify_reg_field1'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_msg_info_u'action">vr_ad_msg_info_u'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_read_mem_obj'action">vr_ad_read_mem_obj'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_read_mem_obj_op'action">vr_ad_read_mem_obj_op'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_read_mem_op'action">vr_ad_read_mem_op'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_read_mem_value'action">vr_ad_read_mem_value'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_read_reg'action">vr_ad_read_reg'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_write_mem_obj'action">vr_ad_write_mem_obj'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_write_mem_obj_op'action">vr_ad_write_mem_obj_op'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_write_mem_op'action">vr_ad_write_mem_op'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_write_mem_value'action">vr_ad_write_mem_value'action</option>
+		    	<option value="summary-macro.html#macros_action_vr_ad_write_reg'action">vr_ad_write_reg'action</option>
+	</optgroup>
+
+
+
+
+	<optgroup label="Macros command">
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace1'command">uvm_vr_ad_trace1'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace2'command">uvm_vr_ad_trace2'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace3'command">uvm_vr_ad_trace3'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace4'command">uvm_vr_ad_trace4'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg10'command">uvm_vr_ad_trace_msg10'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg11'command">uvm_vr_ad_trace_msg11'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg12'command">uvm_vr_ad_trace_msg12'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg13'command">uvm_vr_ad_trace_msg13'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg14'command">uvm_vr_ad_trace_msg14'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg5'command">uvm_vr_ad_trace_msg5'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg6'command">uvm_vr_ad_trace_msg6'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg7'command">uvm_vr_ad_trace_msg7'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg8'command">uvm_vr_ad_trace_msg8'command</option>
+		    	<option value="summary-macro.html#macros_command_uvm_vr_ad_trace_msg9'command">uvm_vr_ad_trace_msg9'command</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_create_reg_cov'command">vr_ad_create_reg_cov'command</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_show_map_report'command">vr_ad_show_map_report'command</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_show_map_vt'command">vr_ad_show_map_vt'command</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_show_maps'command">vr_ad_show_maps'command</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_show_maps_vt'command">vr_ad_show_maps_vt'command</option>
+		    	<option value="summary-macro.html#macros_command_vr_ad_trace_aloc'command">vr_ad_trace_aloc'command</option>
+	</optgroup>
+
+			</select>
+	    </div>
+
+		<br>
+
+		<ul class="list-group">
+			<li class="list-group-item"><a target="content" href="summary-overview.html">Overview</a></li>
+		</ul>
+
+
+			<ul class="list-group">
+				<li class="list-group-item"><a target="content" href="summary-macro.html">Macros</a></li>
+			</ul>
+
+			<ul class="list-group">
+				<li class="list-group-item">Packages</li>
+						<li class="list-group-item"><a data-toggle="collapse" href="#toc_pkg_amiq_i2c"><span class="glyphicon glyphicon-chevron-right"></span></a> <a target="content" href="summary-amiq_i2c.html">amiq_i2c</a>
+							<div id="toc_pkg_amiq_i2c" class="collapse ">
+								<ul class="list-unstyled">
+										<li><a target="content" href="summary-scalar-amiq_i2c.html">Scalars</a></li>
+										<li><a target="content" href="summary-struct-amiq_i2c.html">Structs</a></li>
+										<li><a target="content" href="summary-unit-amiq_i2c.html">Units</a></li>
+										<li><a target="content" href="summary-sequence-amiq_i2c.html">Sequences</a></li>
+								</ul>
+							</div>
+						</li>
+				</li>
+			</ul>
+
+		<ul class="list-group">
+				<li class="list-group-item"><a target="content" href="summary-covergroup.html">Covergroups</a></li>
+
+					<li class="list-group-item"><a target="content" href="summary-check.html">Checks</a></li>
+		</ul>
+
+	    <ul class="list-group">
+			<li class="list-group-item"><a target="content" href="summary.html">Index</a></li>
+		</ul>
+
+
+
+		<hr>
+
+		<div class="row">
+		  <div class="col-xs-6"><div class="pull-left"><a href="http://www.dvteclipse.com" target="_new"><b>Specador<sup>TM</sup><br></>Version 3.5.34</b></a></div></div>
+		  <div class="col-xs-6"><div class="pull-right"><a href="http://www.amiq.com" target="_new"><img style="border:0;" src="img/amiq.png" width="91" height="45"></a></div></div>
+		</div>
+
+	</div>
+
+	<script src="lib/jquery/js/jquery.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="lib/select2/js/select2.js"></script>
+	<script src="js/toc.js"></script>
+	<script src="js/custom.js"></script>
+
+	</body>
+</html>
+

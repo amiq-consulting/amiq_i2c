@@ -1,0 +1,47 @@
+session amiq_i2c_ms_reg {
+    top_dir: "./regression";
+    output_mode: terminal;
+    pre_session_script:"`vm_which.sh amiq_i2c/demo.sh` -ex ms -r batch -compile only -in_reg";
+};
+
+group all {
+    run_script: "`vm_which.sh amiq_i2c/demo.sh` -ex ms -r batch -compile no -test ${BRUN_TOP_FILES} -seed ${BRUN_SEED} -in_reg";
+	 scan_script: "vm_scan_default.pl `vm_which.sh amiq_i2c/examples/vm/amiq_i2c_scan_script.pl`";
+    timeout: 7200;
+
+	test amiq_i2c_ex_ms_test_basic {
+		count: 10;
+		top_files: "amiq_i2c_ex_ms_test_basic";
+		seed: random;
+	};
+	test amiq_i2c_ex_ms_test_cbus {
+		count: 10;
+		top_files: "amiq_i2c_ex_ms_test_cbus";
+		seed: random;
+	};
+	test amiq_i2c_ex_ms_test_device_id {
+		count: 10;
+		top_files: "amiq_i2c_ex_ms_test_device_id";
+		seed: random;
+	};
+	test amiq_i2c_ex_ms_test_general_call {
+		count: 10;
+		top_files: "amiq_i2c_ex_ms_test_general_call";
+		seed: random;
+	};
+	test amiq_i2c_ex_ms_test_hw_general_call {
+		count: 10;
+		top_files: "amiq_i2c_ex_ms_test_hw_general_call";
+		seed: random;
+	};
+	test amiq_i2c_ex_ms_test_random {
+		count: 10;
+		top_files: "amiq_i2c_ex_ms_test_random";
+		seed: random;
+	};
+	test amiq_i2c_ex_ms_test_start_byte {
+		count: 10;
+		top_files: "amiq_i2c_ex_ms_test_start_byte";
+		seed: random;
+	};
+};

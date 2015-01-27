@@ -1,0 +1,25 @@
+waveform add -signals [subst {
+	{[format {amiq_i2c_ex_tb.clock}]}
+	}]
+
+if { [group find -match exact -name I2C] == {} } {
+  group new -name I2C -overlay 0
+group insert -using I2C amiq_i2c_ex_tb.scl amiq_i2c_ex_tb.sda 
+}
+
+set groupId0 [waveform add -groups I2C]
+if { [group find -match exact -name Slave] == {} } {
+  group new -name Slave -overlay 0
+group insert -using Slave amiq_i2c_ex_tb.scl_00_o amiq_i2c_ex_tb.scl_00_o_en amiq_i2c_ex_tb.sda_00_o amiq_i2c_ex_tb.sda_00_o_en 
+}
+
+set groupId0 [waveform add -groups Slave]
+if { [group find -match exact -name Master] == {} } {
+  group new -name Master -overlay 0
+group insert -using Master amiq_i2c_ex_tb.scl_01_o amiq_i2c_ex_tb.scl_01_o_en amiq_i2c_ex_tb.sda_01_o amiq_i2c_ex_tb.sda_01_o_en 
+}
+
+set groupId0 [waveform add -groups Master]
+waveform add -signals [subst {
+	{[format {amiq_i2c_ex_tb.reset_n}]}
+	}]

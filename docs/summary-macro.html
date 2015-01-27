@@ -1,0 +1,781 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>amiq_i2c
+API Specification</title>
+
+	<meta name="author" content="cristian.slav">
+	<meta name="description" content="amiq_i2c API Specification">
+	<meta name="generator" content="Specador. Copyright (C) 2005-2014 AMIQ EDA ">
+	<meta name="keywords" content="e Language, HTML Documentation, Specador, AMIQ EDA, amiq_i2c API Specification">
+
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/content.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container-fluid">
+<br>
+
+
+
+
+
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#macros_preprocessing">
+			<h4 class="panel-title">
+				Preprocessing <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="macros_preprocessing" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_SET_STR_MAX"></a><b>SET_STR_MAX</b>
+						
+					</span>
+					<pre class="comment">SET_STR_MAX -- maximum number of segments shown when sets are printed
+Dots ".........." are printed for the rest
+</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_ADDRESS_WIDTH"></a><b>VR_AD_ADDRESS_WIDTH</b>
+						
+					</span>
+					<pre class="comment">Address width</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_CONST_WHEN"></a><b>VR_AD_CONST_WHEN</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_DATA_WIDTH"></a><b>VR_AD_DATA_WIDTH</b>
+						
+					</span>
+					<pre class="comment">Data width</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_LOAD_NOT_COMPILED"></a><b>VR_AD_LOAD_NOT_COMPILED</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_ON_SETUP_STATIC_INFO"></a><b>VR_AD_ON_SETUP_STATIC_INFO</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_RSD_MAIN_SEQUENCE"></a><b>VR_AD_RSD_MAIN_SEQUENCE</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_STANDARD_DATA_WIDTH"></a><b>VR_AD_STANDARD_DATA_WIDTH</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_10_2_OR_LATER"></a><b>VR_AD_VERSION_10_2_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_11_1_OR_LATER"></a><b>VR_AD_VERSION_11_1_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_12_1_OR_LATER"></a><b>VR_AD_VERSION_12_1_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_12__OR_LATER"></a><b>VR_AD_VERSION_12__OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_2_0_OR_LATER"></a><b>VR_AD_VERSION_2_0_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_2_1_OR_LATER"></a><b>VR_AD_VERSION_2_1_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_2_2_OR_LATER"></a><b>VR_AD_VERSION_2_2_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_2_3_OR_LATER"></a><b>VR_AD_VERSION_2_3_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_2_4_OR_LATER"></a><b>VR_AD_VERSION_2_4_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_6_1"></a><b>VR_AD_VERSION_6_1</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_6_1_1"></a><b>VR_AD_VERSION_6_1_1</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_6_1_1_OR_LATER"></a><b>VR_AD_VERSION_6_1_1_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VERSION_6_1_OR_LATER"></a><b>VR_AD_VERSION_6_1_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_AD_VT_TABLE"></a><b>VR_AD_VT_TABLE</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_SETS_VERSION_2_0_OR_LATER"></a><b>VR_SETS_VERSION_2_0_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_SETS_VERSION_2_1_OR_LATER"></a><b>VR_SETS_VERSION_2_1_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_SETS_VERSION_2_2_OR_LATER"></a><b>VR_SETS_VERSION_2_2_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_SETS_VERSION_2_3_OR_LATER"></a><b>VR_SETS_VERSION_2_3_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_SETS_VERSION_2_4_OR_LATER"></a><b>VR_SETS_VERSION_2_4_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_SETS_VERSION_6_1"></a><b>VR_SETS_VERSION_6_1</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_VR_SETS_VERSION_6_1_OR_LATER"></a><b>VR_SETS_VERSION_6_1_OR_LATER</b>
+						
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_AMIQ_I2C_MAXIMUM_SCL_LOW_CLOCK_WIDTH"></a><b>AMIQ_I2C_MAXIMUM_SCL_LOW_CLOCK_WIDTH</b>
+						
+					</span>
+					<pre class="comment">Maximum serial clock width of the low front</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_AMIQ_I2C_MAX_STRETCH"></a><b>AMIQ_I2C_MAX_STRETCH</b>
+						
+					</span>
+					<pre class="comment">Default maximum number of cycles to do stretch</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_AMIQ_I2C_MINIMUM_SCL_LOW_CLOCK_WIDTH"></a><b>AMIQ_I2C_MINIMUM_SCL_LOW_CLOCK_WIDTH</b>
+						
+					</span>
+					<pre class="comment">Minimum serial clock width of the low front</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING"></a><b>AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING</b>
+						
+					</span>
+					<pre class="comment">Addresses reserved for 10-bit slave addressing</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_AMIQ_I2C_RSVD_ADDR_FOR_CBUS_ADDRESS"></a><b>AMIQ_I2C_RSVD_ADDR_FOR_CBUS_ADDRESS</b>
+						
+					</span>
+					<pre class="comment">Addresses reserved for CBUS address</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID"></a><b>AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID</b>
+						
+					</span>
+					<pre class="comment">Addresses reserved for device ID</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_AMIQ_I2C_RSVD_ADDR_FOR_DIFFERENT_BUS_FORMAT"></a><b>AMIQ_I2C_RSVD_ADDR_FOR_DIFFERENT_BUS_FORMAT</b>
+						
+					</span>
+					<pre class="comment">Addresses reserved for different bus format</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_01"></a><b>AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_01</b>
+						
+					</span>
+					<pre class="comment">Addresses reserved for future purposes</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02"></a><b>AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02</b>
+						
+					</span>
+					<pre class="comment">Addresses reserved for future purposes</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_AMIQ_I2C_RSVD_ADDR_FOR_GENERAL_CALL_AND_START_BYTE"></a><b>AMIQ_I2C_RSVD_ADDR_FOR_GENERAL_CALL_AND_START_BYTE</b>
+						
+					</span>
+					<pre class="comment">Addresses reserved for general call address & START byte</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_AMIQ_I2C_RSVD_ADDR_FOR_HS_MODE_MASTER_CODE"></a><b>AMIQ_I2C_RSVD_ADDR_FOR_HS_MODE_MASTER_CODE</b>
+						
+					</span>
+					<pre class="comment">Addresses reserved for Hs-mode master code</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_vr_set_base_type32_MAX"></a><b>vr_set_base_type32_MAX</b>
+						
+					</span>
+					<pre class="comment">Maximum of set32 type</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_preprocessing_vr_set_base_type32_MIN"></a><b>vr_set_base_type32_MIN</b>
+						
+					</span>
+					<pre class="comment">Minimum of set32 type</pre>
+				</li>
+		</ul>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#macros_statement">
+			<h4 class="panel-title">
+				Statements <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="macros_statement" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_statement_vr_ad_debug_def_reg'statement"></a><b>vr_ad_debug_def_reg'statement</b>
+						VR_AD_DEBUG_DEF_REG
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_statement_vr_ad_mem_def_imp'statement"></a><b>vr_ad_mem_def_imp'statement</b>
+						mem_obj_def &lt;mem_name'name&gt; &lt;b'block&gt;
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_statement_vr_ad_reg_def_imp'statement"></a><b>vr_ad_reg_def_imp'statement</b>
+						[vr_ad_]reg_def &lt;reg_name'name&gt;[ &lt;agent_name'name&gt; &lt;addr'exp&gt;] &lt;b'block&gt;
+					</span>
+					<pre class="comment"><b><u>Define reg macro</u></b>
+&nbsp;&nbsp;&nbsp;&nbsp;A. Define a reg type + instantiate it in a register-file:
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;NAME&gt;     &lt;REG_FILE&gt; &lt;OFFSET&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;reg_def EX_TX_DATA XCORE      0x10    {
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;NAME&gt;   &lt;TYPE&gt;            &lt;MASK&gt; &lt;RESET VALUE&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;+%status  : bool           : R   : 0x0;
+&nbsp;&nbsp;&nbsp;&nbsp;%data    : uint(bits:31)  : RW  : 0x0;
+&nbsp;&nbsp;&nbsp;&nbsp;};
+&nbsp;&nbsp;&nbsp;&nbsp;B. Define only a register type:
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;NAME&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;reg_def EX_RX_DATA    {
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;NAME&gt;   &lt;TYPE&gt;            &lt;MASK&gt; &lt;RESET VALUE&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;+%status  : bool           : R   : 0x0;
+&nbsp;&nbsp;&nbsp;&nbsp;%data    : uint(bits:31)  : RW  : 0x0;
+&nbsp;&nbsp;&nbsp;&nbsp;};</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_statement_vr_ad_sc_ports'statement"></a><b>vr_ad_sc_ports'statement</b>
+						vr_ad_port_unit [&lt;module_name'name&gt; ]for &lt;ref_file_kind'name&gt; vr_ad_reg_file (&lt;SC_KIND&gt;simple_port[s]|sc_signal[s]|tlm_reg_api) &lt;b'block&gt;
+					</span>
+					<pre class="comment">
+Create SystemC-Ports for a given reg file
+
+parameters are the system-C module name and the e reg file name
+in each line a port is a defined for a register (with a given type and hdl_path)
+or a nested reg file is declared.
+
+the output of the macro is the unit holding the ports, and the 'connect'
+method which sets properly the port_ref field of the register
+</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_statement_vr_ad_ud_sc_model'statement"></a><b>vr_ad_ud_sc_model'statement</b>
+						vr_ad_add_sc_model &lt;model_name'name&gt; &lt;b'block&gt;
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_statement_vr_ad_ud_sc_ports'statement"></a><b>vr_ad_ud_sc_ports'statement</b>
+						vr_ad_port_unit [&lt;module_name'name&gt; ]for &lt;ref_file_kind'name&gt; vr_ad_reg_file user_defined[ ]=[ ]&lt;ud_name'name&gt; &lt;b'block&gt;
+					</span>
+					
+				</li>
+		</ul>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#macros_struct_member">
+			<h4 class="panel-title">
+				Struct Members <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="macros_struct_member" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_struct_member_vr_ad_mvl_bits'struct_member"></a><b>vr_ad_mvl_bits'struct_member</b>
+						vr_ad implementation of get &lt;xz'name&gt; &lt;XZ'name&gt; bits method
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_struct_member_vr_ad_reg_list'struct_member"></a><b>vr_ad_reg_list'struct_member</b>
+						reg_list &lt;reg'name&gt;\[&lt;size'num&gt;\] of &lt;reg_type'name&gt; at &lt;addr'num&gt;[ step &lt;step'exp&gt;]
+					</span>
+					<pre class="comment">
+Add a register list into a register file.
+The purpose in this macro is to save performance (doing new vs gen)
+
+<ul><li>reg_list &lt;LIST-NAME&gt;[&lt;LIST-SIZE&gt;] of &lt;REG-TYPE&gt; at &lt;OFSSET&gt;[ step &lt;STEP&gt;]</li></ul>
+
+extend EX_FILE vr_ad_reg_file {
+reg_list regs[1000] of TX_MODE at 0x1000
+};
+</pre>
+				</li>
+		</ul>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#macros_action">
+			<h4 class="panel-title">
+				Actions <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="macros_action" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action___etools__NON_STANDARD__FOR_EACH_STARTING_FROM'action"></a><b>__etools__NON_STANDARD__FOR_EACH_STARTING_FROM'action</b>
+						for each vr_ad_reg_file starting from sys  {
+                if it.kind.to_string() == file_kind  {
+                    var r := it.get_reg_by_kind(reg_kind.as_a(vr_ad_reg_kind));
+                    if r == NULL  {
+                        res.res = VR_AD_REG_NOT_FOUND;
+                        error_reg_input();
+                    };
+                    data = r.get_cur_value(); 
+                    res.res = VR_AD_ACCESS_OK;
+                };            
+            }
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_debug_def_reg'action"></a><b>vr_ad_debug_def_reg'action</b>
+						VR_AD_DEBUG_DEF_REG
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_info1_new'action"></a><b>vr_ad_info1_new'action</b>
+						vr_ad_msg_info_i (&lt;VERB_ID&gt;FULL|HIGH|MEDIUM|LOW|NONE)[ ],[ ]&lt;short_msg'string&gt;[ ],[ ]&lt;msg_item1'exp&gt;[ ],&lt;msg_body'string&gt;[ ]
+					</span>
+					<pre class="comment">One-item messages</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_info2_new'action"></a><b>vr_ad_info2_new'action</b>
+						vr_ad_msg_info_i (&lt;VERB_ID&gt;FULL|HIGH|MEDIUM|LOW|NONE)[ ],[ ]&lt;short_msg'string&gt;[ ],[ ]&lt;msg_item1'exp&gt;[ ],[ ]&lt;msg_item2'exp&gt;,[ ]&lt;msg_body'string&gt;[ ]
+					</span>
+					<pre class="comment">Two-items messages</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_message'action"></a><b>vr_ad_message'action</b>
+						vr_ad_message[ ]\(&lt;any&gt;\)
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_modify_reg_field1'action"></a><b>vr_ad_modify_reg_field1'action</b>
+						[vr_ad_]write_reg_fields[ &lt;gen_op'block&gt;] &lt;reg_field'exp&gt;[ {&lt;assign'action&gt;;...}]
+					</span>
+					<pre class="comment"><b><u>G</u></b>
+&nbsp;&nbsp;&nbsp;&nbsp;Read modify Write
+
+<ul><li>write_reg &lt;REG-FIELD&gt; {&lt;REG-FIELD-ASSIGNMENTS&gt;}
+write_reg_fields tx_data {.data = 8000};</li></ul></pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_msg_info_u'action"></a><b>vr_ad_msg_info_u'action</b>
+						vr_ad_msg_info[ ]\(&lt;any&gt;\)
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_read_mem_obj'action"></a><b>vr_ad_read_mem_obj'action</b>
+						[vr_ad_]read_mem_obj[ect] &lt;obj'exp&gt;
+					</span>
+					<pre class="comment">
+Read memory object with op constraints
+read_mem_obj {.backdoor} 0x1000;
+</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_read_mem_obj_op'action"></a><b>vr_ad_read_mem_obj_op'action</b>
+						[vr_ad_]read_mem_obj[ect] &lt;gen_op'block&gt; &lt;obj'exp&gt;
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_read_mem_op'action"></a><b>vr_ad_read_mem_op'action</b>
+						[vr_ad_]read_mem &lt;gen_op'block&gt; &lt;addr'exp&gt; &lt;data'exp&gt; &lt;size'exp&gt;
+					</span>
+					<pre class="comment">
+Read mem with op constraints
+read_mem {.backdoor} 0x1000 4;
+</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_read_mem_value'action"></a><b>vr_ad_read_mem_value'action</b>
+						[vr_ad_]read_mem &lt;addr'exp&gt; &lt;data'exp&gt; &lt;size'exp&gt;
+					</span>
+					<pre class="comment">
+Read mem
+read_mem 0x1000 4;
+</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_read_reg'action"></a><b>vr_ad_read_reg'action</b>
+						[vr_ad_]read_reg[ &lt;gen_op'block&gt;] &lt;reg_field'exp&gt;
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_write_mem_obj'action"></a><b>vr_ad_write_mem_obj'action</b>
+						[vr_ad_]write_mem_obj[ect] &lt;obj'exp&gt;[ &lt;mask'exp&gt;]
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_write_mem_obj_op'action"></a><b>vr_ad_write_mem_obj_op'action</b>
+						[vr_ad_]write_mem_obj[ect] &lt;gen_op'block&gt; &lt;obj'exp&gt;[ &lt;mask'exp&gt;]
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_write_mem_op'action"></a><b>vr_ad_write_mem_op'action</b>
+						[vr_ad_]write_mem &lt;gen_op'block&gt; &lt;addr'exp&gt; &lt;data'exp&gt;[ &lt;mask'exp&gt;]
+					</span>
+					<pre class="comment">
+Write mem with op constraints
+write_mem {.backdoor} 0x1000 0xaabbccddd;
+</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_write_mem_value'action"></a><b>vr_ad_write_mem_value'action</b>
+						[vr_ad_]write_mem &lt;addr'exp&gt; &lt;data'exp&gt;[ &lt;mask'exp&gt;]
+					</span>
+					<pre class="comment">#ifndef STANDARD_E {
+
+Write mem
+write_mem 0x1000 0xaabbccdd;
+</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_action_vr_ad_write_reg'action"></a><b>vr_ad_write_reg'action</b>
+						[vr_ad_]write_reg[ &lt;gen_op'block&gt;] &lt;reg_field'exp&gt;[[[ keeping] {&lt;gen_reg'exp&gt;;...}]| val[ue] &lt;val'exp&gt;]
+					</span>
+					
+				</li>
+		</ul>
+	</div>
+
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#macros_command">
+			<h4 class="panel-title">
+				Commands <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="macros_command" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace1'command"></a><b>uvm_vr_ad_trace1'command</b>
+						trace vr_ad trans on
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace2'command"></a><b>uvm_vr_ad_trace2'command</b>
+						trace vr_ad trans off
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace3'command"></a><b>uvm_vr_ad_trace3'command</b>
+						trace vr_ad on
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace4'command"></a><b>uvm_vr_ad_trace4'command</b>
+						trace vr_ad off
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace_msg10'command"></a><b>uvm_vr_ad_trace_msg10'command</b>
+						trace vr_ad trans FULL
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace_msg11'command"></a><b>uvm_vr_ad_trace_msg11'command</b>
+						trace vr_ad trans[ HIGH]
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace_msg12'command"></a><b>uvm_vr_ad_trace_msg12'command</b>
+						trace vr_ad trans MEDIUM
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace_msg13'command"></a><b>uvm_vr_ad_trace_msg13'command</b>
+						trace vr_ad trans LOW
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace_msg14'command"></a><b>uvm_vr_ad_trace_msg14'command</b>
+						trace vr_ad trans[ NONE|off]
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace_msg5'command"></a><b>uvm_vr_ad_trace_msg5'command</b>
+						trace vr_ad FULL
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace_msg6'command"></a><b>uvm_vr_ad_trace_msg6'command</b>
+						trace vr_ad[ HIGH]
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace_msg7'command"></a><b>uvm_vr_ad_trace_msg7'command</b>
+						trace vr_ad MEDIUM
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace_msg8'command"></a><b>uvm_vr_ad_trace_msg8'command</b>
+						trace vr_ad LOW
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_uvm_vr_ad_trace_msg9'command"></a><b>uvm_vr_ad_trace_msg9'command</b>
+						trace vr_ad NONE
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_vr_ad_create_reg_cov'command"></a><b>vr_ad_create_reg_cov'command</b>
+						write reg cov def &lt;file_name'string&gt;
+					</span>
+					
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_vr_ad_show_map_report'command"></a><b>vr_ad_show_map_report'command</b>
+						sh[ow] map[s] &lt;number'num&gt;
+					</span>
+					<pre class="comment">C:</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_vr_ad_show_map_vt'command"></a><b>vr_ad_show_map_vt'command</b>
+						sh[ow] map[s] &lt;number'num&gt; &lt;opt&gt;win
+					</span>
+					<pre class="comment">D:</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_vr_ad_show_maps'command"></a><b>vr_ad_show_maps'command</b>
+						sh[ow] map[s]
+					</span>
+					<pre class="comment"><b><u>show maps</u></b>
+<font color="#808080">&nbsp;&nbsp;&nbsp;&nbsp;A. show all address maps</font>          ascii mode
+                                                          &nbsp;&nbsp;&nbsp;&nbsp;- sh[ow] map[ssys.cbus_env.xcore.status_reg.fld_a]
+<font color="#808080">&nbsp;&nbsp;&nbsp;&nbsp;B. show all address maps</font>          gui mode
+                                                          &nbsp;&nbsp;&nbsp;&nbsp;- sh[ow] map[s] -win
+<font color="#808080">&nbsp;&nbsp;&nbsp;&nbsp;C. show a specific address map</font>    ascii mode
+                                                          &nbsp;&nbsp;&nbsp;&nbsp;- sh[ow] map[s] &lt;num&gt;
+                                                          &nbsp;&nbsp;&nbsp;&nbsp;show map 1
+<font color="#808080">&nbsp;&nbsp;&nbsp;&nbsp;D. show a specific address map</font>    gui mode
+                                                          &nbsp;&nbsp;&nbsp;&nbsp;- sh[ow] map[s] &lt;num&gt; -win
+                                                          &nbsp;&nbsp;&nbsp;&nbsp;show map 1 -win
+
+A:</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_vr_ad_show_maps_vt'command"></a><b>vr_ad_show_maps_vt'command</b>
+						sh[ow] map[s] &lt;opt&gt;win
+					</span>
+					<pre class="comment">B:</pre>
+				</li>
+				<li class="list-group-item">
+					<span class="signature">
+						<a name="macros_command_vr_ad_trace_aloc'command"></a><b>vr_ad_trace_aloc'command</b>
+						trace ad al[loc][ (on|off)]
+					</span>
+					<pre class="comment"><b><u>Trace ad alloc</u></b>
+&nbsp;&nbsp;&nbsp;&nbsp;Turns on the trace messages about the sets operations</pre>
+				</li>
+		</ul>
+	</div>
+
+
+	</div>
+	<script src="lib/jquery/js/jquery.js"></script>
+	<script src="lib/jquery/js/jquery.scrollUp.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="js/content.js"></script>
+	<script src="js/custom.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,47 @@
+waveform add -signals [subst {
+	{[format {amiq_i2c_ex_vr_ad_tb.clock}]}
+	}]
+
+if { [group find -match exact -name {I2C bus}] == {} } {
+  group new -name {I2C bus} -overlay 0
+group insert -using {I2C bus} amiq_i2c_ex_vr_ad_tb.scl amiq_i2c_ex_vr_ad_tb.sda 
+}
+
+set groupId0 [waveform add -groups {{I2C bus}}]
+set gpGlist0 [waveform hierarchy contents $groupId0]
+set gpID0 [lindex $gpGlist0 0]
+foreach {name attrs} [subst  {
+    {[format {simulator::amiq_i2c_ex_vr_ad_tb.scl}]} {}
+    {[format {simulator::amiq_i2c_ex_vr_ad_tb.sda}]} {-color #ff9900}
+}] childcmds {
+    {}
+    {}
+} {
+    set expected [ join [waveform signals -format fullpath $gpID0] ]
+    if {[string equal $name $expected]} {
+        if {$attrs != ""} {
+            eval waveform format $gpID0 $attrs
+        }
+        if { $childcmds != ""} {
+            eval $childcmds
+        }
+    }
+    set gpGlist0 [lrange $gpGlist0 1 end]
+    set gpID0 [lindex $gpGlist0 0]
+}
+
+if { [group find -match exact -name Master] == {} } {
+  group new -name Master -overlay 0
+group insert -using Master amiq_i2c_ex_vr_ad_tb.scl_00_o_en amiq_i2c_ex_vr_ad_tb.sda_00_o_en 
+}
+
+set groupId0 [waveform add -groups Master]
+if { [group find -match exact -name Slave] == {} } {
+  group new -name Slave -overlay 0
+group insert -using Slave amiq_i2c_ex_vr_ad_tb.scl_01_o_en amiq_i2c_ex_vr_ad_tb.sda_01_o_en 
+}
+
+set groupId0 [waveform add -groups Slave]
+waveform add -signals [subst {
+	{[format {amiq_i2c_ex_vr_ad_tb.reset_n}]}
+	}]

@@ -1,0 +1,796 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>amiq_i2c
+API Specification</title>
+
+	<meta name="author" content="cristian.slav">
+	<meta name="description" content="amiq_i2c API Specification">
+	<meta name="generator" content="Specador. Copyright (C) 2005-2014 AMIQ EDA ">
+	<meta name="keywords" content="e Language, HTML Documentation, Specador, AMIQ EDA, amiq_i2c API Specification">
+
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/content.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container-fluid">
+
+	<br>
+	<div class="btn-group">
+			
+	<button data-scroll="#macros_action" type="button" class="btn btn-default">Macros - Actions <span class="badge">17</span></button>
+	<button data-scroll="#macros_command" type="button" class="btn btn-default">Macros - Commands <span class="badge">20</span></button>
+	
+	
+	<button data-scroll="#macros_preprocessing" type="button" class="btn btn-default">Macros - Preprocessing <span class="badge">42</span></button>
+	<button data-scroll="#macros_statement" type="button" class="btn btn-default">Macros - Statements <span class="badge">6</span></button>
+	<button data-scroll="#macros_struct_member" type="button" class="btn btn-default">Macros - Struct Members <span class="badge">2</span></button>
+	
+	<button data-scroll="#scalars" type="button" class="btn btn-default">Scalars <span class="badge">51</span></button>
+	<button data-scroll="#sequences" type="button" class="btn btn-default">Sequences <span class="badge">2</span></button>
+	<button data-scroll="#structs" type="button" class="btn btn-default">Structs <span class="badge">6</span></button>
+	<button data-scroll="#units" type="button" class="btn btn-default">Units <span class="badge">15</span></button>
+
+	</div>
+	<br>
+
+<br>
+
+
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#macros_action">
+			<h4 class="panel-title">
+				Macros - Actions <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="macros_action" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action___etools__NON_STANDARD__FOR_EACH_STARTING_FROM'action">__etools__NON_STANDARD__FOR_EACH_STARTING_FROM'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_debug_def_reg'action">vr_ad_debug_def_reg'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_info1_new'action">vr_ad_info1_new'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_info2_new'action">vr_ad_info2_new'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_message'action">vr_ad_message'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_modify_reg_field1'action">vr_ad_modify_reg_field1'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_msg_info_u'action">vr_ad_msg_info_u'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_read_mem_obj'action">vr_ad_read_mem_obj'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_read_mem_obj_op'action">vr_ad_read_mem_obj_op'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_read_mem_op'action">vr_ad_read_mem_op'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_read_mem_value'action">vr_ad_read_mem_value'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_read_reg'action">vr_ad_read_reg'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_write_mem_obj'action">vr_ad_write_mem_obj'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_write_mem_obj_op'action">vr_ad_write_mem_obj_op'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_write_mem_op'action">vr_ad_write_mem_op'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_write_mem_value'action">vr_ad_write_mem_value'action</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_action_vr_ad_write_reg'action">vr_ad_write_reg'action</a>
+
+				</li>
+		</ul>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#macros_command">
+			<h4 class="panel-title">
+				Macros - Commands <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="macros_command" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace1'command">uvm_vr_ad_trace1'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace2'command">uvm_vr_ad_trace2'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace3'command">uvm_vr_ad_trace3'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace4'command">uvm_vr_ad_trace4'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace_msg10'command">uvm_vr_ad_trace_msg10'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace_msg11'command">uvm_vr_ad_trace_msg11'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace_msg12'command">uvm_vr_ad_trace_msg12'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace_msg13'command">uvm_vr_ad_trace_msg13'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace_msg14'command">uvm_vr_ad_trace_msg14'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace_msg5'command">uvm_vr_ad_trace_msg5'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace_msg6'command">uvm_vr_ad_trace_msg6'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace_msg7'command">uvm_vr_ad_trace_msg7'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace_msg8'command">uvm_vr_ad_trace_msg8'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_uvm_vr_ad_trace_msg9'command">uvm_vr_ad_trace_msg9'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_vr_ad_create_reg_cov'command">vr_ad_create_reg_cov'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_vr_ad_show_map_report'command">vr_ad_show_map_report'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_vr_ad_show_map_vt'command">vr_ad_show_map_vt'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_vr_ad_show_maps'command">vr_ad_show_maps'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_vr_ad_show_maps_vt'command">vr_ad_show_maps_vt'command</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_command_vr_ad_trace_aloc'command">vr_ad_trace_aloc'command</a>
+
+				</li>
+		</ul>
+	</div>
+
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#macros_preprocessing">
+			<h4 class="panel-title">
+				Macros - Preprocessing <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="macros_preprocessing" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_SET_STR_MAX">SET_STR_MAX</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_ADDRESS_WIDTH">VR_AD_ADDRESS_WIDTH</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_CONST_WHEN">VR_AD_CONST_WHEN</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_DATA_WIDTH">VR_AD_DATA_WIDTH</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_LOAD_NOT_COMPILED">VR_AD_LOAD_NOT_COMPILED</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_ON_SETUP_STATIC_INFO">VR_AD_ON_SETUP_STATIC_INFO</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_RSD_MAIN_SEQUENCE">VR_AD_RSD_MAIN_SEQUENCE</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_STANDARD_DATA_WIDTH">VR_AD_STANDARD_DATA_WIDTH</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_10_2_OR_LATER">VR_AD_VERSION_10_2_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_11_1_OR_LATER">VR_AD_VERSION_11_1_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_12_1_OR_LATER">VR_AD_VERSION_12_1_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_12__OR_LATER">VR_AD_VERSION_12__OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_2_0_OR_LATER">VR_AD_VERSION_2_0_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_2_1_OR_LATER">VR_AD_VERSION_2_1_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_2_2_OR_LATER">VR_AD_VERSION_2_2_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_2_3_OR_LATER">VR_AD_VERSION_2_3_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_2_4_OR_LATER">VR_AD_VERSION_2_4_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_6_1">VR_AD_VERSION_6_1</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_6_1_1">VR_AD_VERSION_6_1_1</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_6_1_1_OR_LATER">VR_AD_VERSION_6_1_1_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VERSION_6_1_OR_LATER">VR_AD_VERSION_6_1_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_AD_VT_TABLE">VR_AD_VT_TABLE</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_SETS_VERSION_2_0_OR_LATER">VR_SETS_VERSION_2_0_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_SETS_VERSION_2_1_OR_LATER">VR_SETS_VERSION_2_1_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_SETS_VERSION_2_2_OR_LATER">VR_SETS_VERSION_2_2_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_SETS_VERSION_2_3_OR_LATER">VR_SETS_VERSION_2_3_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_SETS_VERSION_2_4_OR_LATER">VR_SETS_VERSION_2_4_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_SETS_VERSION_6_1">VR_SETS_VERSION_6_1</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_VR_SETS_VERSION_6_1_OR_LATER">VR_SETS_VERSION_6_1_OR_LATER</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="summary-macro.html#macros_null_AMIQ_I2C_MAXIMUM_SCL_LOW_CLOCK_WIDTH">AMIQ_I2C_MAXIMUM_SCL_LOW_CLOCK_WIDTH</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="summary-macro.html#macros_null_AMIQ_I2C_MAX_STRETCH">AMIQ_I2C_MAX_STRETCH</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="summary-macro.html#macros_null_AMIQ_I2C_MINIMUM_SCL_LOW_CLOCK_WIDTH">AMIQ_I2C_MINIMUM_SCL_LOW_CLOCK_WIDTH</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING">AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_CBUS_ADDRESS">AMIQ_I2C_RSVD_ADDR_FOR_CBUS_ADDRESS</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID">AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_DIFFERENT_BUS_FORMAT">AMIQ_I2C_RSVD_ADDR_FOR_DIFFERENT_BUS_FORMAT</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_01">AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_01</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02">AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_GENERAL_CALL_AND_START_BYTE">AMIQ_I2C_RSVD_ADDR_FOR_GENERAL_CALL_AND_START_BYTE</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="summary-macro.html#macros_null_AMIQ_I2C_RSVD_ADDR_FOR_HS_MODE_MASTER_CODE">AMIQ_I2C_RSVD_ADDR_FOR_HS_MODE_MASTER_CODE</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_vr_set_base_type32_MAX">vr_set_base_type32_MAX</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_null_vr_set_base_type32_MIN">vr_set_base_type32_MIN</a>
+
+				</li>
+		</ul>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#macros_statement">
+			<h4 class="panel-title">
+				Macros - Statements <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="macros_statement" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_statement_vr_ad_debug_def_reg'statement">vr_ad_debug_def_reg'statement</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_statement_vr_ad_mem_def_imp'statement">vr_ad_mem_def_imp'statement</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_statement_vr_ad_reg_def_imp'statement">vr_ad_reg_def_imp'statement</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_statement_vr_ad_sc_ports'statement">vr_ad_sc_ports'statement</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_statement_vr_ad_ud_sc_model'statement">vr_ad_ud_sc_model'statement</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_statement_vr_ad_ud_sc_ports'statement">vr_ad_ud_sc_ports'statement</a>
+
+				</li>
+		</ul>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#macros_struct member">
+			<h4 class="panel-title">
+				Macros - Struct Members <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="macros_struct member" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_struct_member_vr_ad_mvl_bits'struct_member">vr_ad_mvl_bits'struct_member</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="summary-macro.html#macros_struct_member_vr_ad_reg_list'struct_member">vr_ad_reg_list'struct_member</a>
+
+				</li>
+		</ul>
+	</div>
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#scalars">
+			<h4 class="panel-title">
+				Scalars <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="scalars" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+	 		<a href="main-amiq_i2c_ex_virtual_seq_kind.html">amiq_i2c_ex_virtual_seq_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-amiq_i2c_logic_0_flavor_t.html">amiq_i2c_logic_0_flavor_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-amiq_i2c_logic_1_flavor_t.html">amiq_i2c_logic_1_flavor_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_addr_cmp_t.html">amiq_i2c_addr_cmp_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_addr_mode_t.html">amiq_i2c_addr_mode_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_agent_kind_t.html">amiq_i2c_agent_kind_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_arbitration_status_t.html">amiq_i2c_arbitration_status_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_bus_is_busy_beh_t.html">amiq_i2c_bus_is_busy_beh_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_cs_decode_byte_t.html">amiq_i2c_cs_decode_byte_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_cs_decode_phase_t.html">amiq_i2c_cs_decode_phase_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_cs_decode_symbol_t.html">amiq_i2c_cs_decode_symbol_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_env_name_t.html">amiq_i2c_env_name_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_first_byte_info_t.html">amiq_i2c_first_byte_info_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_lost_arb_beh_t.html">amiq_i2c_lost_arb_beh_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_m_seq_kind.html">amiq_i2c_m_seq_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_position_2_interval_t.html">amiq_i2c_position_2_interval_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_rw_t.html">amiq_i2c_rw_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_s_seq_kind.html">amiq_i2c_s_seq_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_sda_t.html">amiq_i2c_sda_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_speed_mode_t.html">amiq_i2c_speed_mode_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_access_kind.html">vr_ad_access_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_access_order.html">vr_ad_access_order</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_access_t.html">vr_ad_access_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_addr_int.html">vr_ad_addr_int</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_addr_t.html">vr_ad_addr_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_data_int.html">vr_ad_data_int</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_data_t.html">vr_ad_data_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_field_attribute_t.html">vr_ad_field_attribute_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_indirect_mode.html">vr_ad_indirect_mode</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_map_kind.html">vr_ad_map_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_mem_default_value_t.html">vr_ad_mem_default_value_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_mem_kind.html">vr_ad_mem_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_mem_obj_kind.html">vr_ad_mem_obj_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_op_mode.html">vr_ad_op_mode</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_proxy_to_external_kind.html">vr_ad_proxy_to_external_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_reg_file_kind.html">vr_ad_reg_file_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_reg_kind.html">vr_ad_reg_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_reset_severity_t.html">vr_ad_reset_severity_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_rw_t.html">vr_ad_rw_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_rw_todo_t.html">vr_ad_rw_todo_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_sc_reg_api_kind.html">vr_ad_sc_reg_api_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_sequence_kind.html">vr_ad_sequence_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_set_kind.html">vr_ad_set_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_set_policy_t.html">vr_ad_set_policy_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_size_t.html">vr_ad_size_t</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_space_kind.html">vr_ad_space_kind</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_ad_tlm_res.html">vr_ad_tlm_res</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_set_base_type32.html">vr_set_base_type32</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_set_base_type_inf.html">vr_set_base_type_inf</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vr_set_strategy_type.html">vr_set_strategy_type</a>
+
+				</li>
+				<li class="list-group-item">
+	 		<a href="main-vt_slice_navigation_kind.html">vt_slice_navigation_kind</a>
+
+				</li>
+		</ul>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#sequences">
+			<h4 class="panel-title">
+				Sequences <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="sequences" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_m_seq.html">amiq_i2c_m_seq</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_s_seq.html">amiq_i2c_s_seq</a>
+
+				</li>
+		</ul>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#structs">
+			<h4 class="panel-title">
+				Structs <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="structs" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_item_s.html">amiq_i2c_item_s</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_mp_byte_t.html">amiq_i2c_mp_byte_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_mp_item_t.html">amiq_i2c_mp_item_t</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_scl_def_s.html">amiq_i2c_scl_def_s</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_sda_def_s.html">amiq_i2c_sda_def_s</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_sda_element_s.html">amiq_i2c_sda_element_s</a>
+
+				</li>
+		</ul>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" data-toggle="collapse" data-target="#units">
+			<h4 class="panel-title">
+				Units <span class="glyphicon glyphicon-chevron-down"></span>
+			</h4>
+		</div>
+		<ul id="units" class="list-group panel-collapse collapse in">
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_agent_config_u.html">amiq_i2c_agent_config_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_agent_monitor_u.html">amiq_i2c_agent_monitor_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_agent_smp_u.html">amiq_i2c_agent_smp_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_agent_u.html">amiq_i2c_agent_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_any_agent_unit_u.html">amiq_i2c_any_agent_unit_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_any_unit_u.html">amiq_i2c_any_unit_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_bfm_u.html">amiq_i2c_bfm_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_bus_monitor_u.html">amiq_i2c_bus_monitor_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_driver_u.html">amiq_i2c_driver_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_env_config_u.html">amiq_i2c_env_config_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_env_smp_u.html">amiq_i2c_env_smp_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_env_u.html">amiq_i2c_env_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_m_driver_u.html">amiq_i2c_m_driver_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_s_driver_u.html">amiq_i2c_s_driver_u</a>
+
+				</li>
+				<li class="list-group-item">
+	<a  href="summary-amiq_i2c.html">amiq_i2c</a> ::  		<a href="amiq_i2c-amiq_i2c_synchronizer_u.html">amiq_i2c_synchronizer_u</a>
+
+				</li>
+		</ul>
+	</div>
+
+
+	</div>
+	<script src="lib/jquery/js/jquery.js"></script>
+	<script src="lib/jquery/js/jquery.scrollUp.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="js/content.js"></script>
+	<script src="js/custom.js"></script>
+
+	</body>
+</html>
