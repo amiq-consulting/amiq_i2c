@@ -68,7 +68,7 @@ extend has_coverage amiq_i2c_bus_monitor_u {
          or (first_byte_info == NORMAL_10BITS and addr_mode == AM_7BITS)
          or (first_byte_info == DEVICE_ID and addr_mode == AM_10BITS)
          or (first_byte_info == DEVICE_ID and rw == WRITE)
-         or (first_byte_info in {RESERVED_01; RESERVED_02; RESERVED_03} and addr_mode == AM_10BITS)
+         or (first_byte_info in {DIFFERENT_BUS_FORMAT; FUTURE_USE_01} and addr_mode == AM_10BITS)
          or (first_byte_info == CBUS_ADDR and addr_mode == AM_10BITS)
          or (first_byte_info == START_BYTE and addr_mode == AM_10BITS)
          or (first_byte_info == START_BYTE and rw == WRITE)

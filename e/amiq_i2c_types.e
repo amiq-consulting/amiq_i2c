@@ -65,7 +65,7 @@ type amiq_i2c_cs_decode_byte_t      : [IDLE, BYTE];
 type amiq_i2c_cs_decode_phase_t     : [IDLE, ADDR, DATA];
 
 //first byte info
-type amiq_i2c_first_byte_info_t     : [NONE, GENERAL_CALL, START_BYTE, CBUS_ADDR, RESERVED_01, RESERVED_02, HS_MASTER_CODE, RESERVED_03, DEVICE_ID, NORMAL_7BITS, NORMAL_10BITS];
+type amiq_i2c_first_byte_info_t     : [NONE, GENERAL_CALL, START_BYTE, CBUS_ADDR, DIFFERENT_BUS_FORMAT, FUTURE_USE_01, HS_MASTER_CODE, DEVICE_ID, NORMAL_7BITS, NORMAL_10BITS];
 
 //position in symbol
 type amiq_i2c_position_2_interval_t : [FIRST_HALF, MIDDLE, SECOND_HALF];

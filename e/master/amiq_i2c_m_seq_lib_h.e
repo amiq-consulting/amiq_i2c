@@ -80,10 +80,10 @@ extend TRANSFER amiq_i2c_m_seq {
 
       //"Hs-mode master code"
       keep soft addr not in AMIQ_I2C_RSVD_ADDR_FOR_HS_MODE_MASTER_CODE;
-
-      //"Reserved for future purposes"
-      keep soft addr not in AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02;
-
+      
+      //"Reserved for device id"
+      keep soft addr not in AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID;
+      
       //"10-bit slave addressing"
       keep soft addr not in AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING;
    };
@@ -209,9 +209,6 @@ extend DEVICE_ID amiq_i2c_m_seq {
 
       //HS-mode master code
       keep soft addr not in AMIQ_I2C_RSVD_ADDR_FOR_HS_MODE_MASTER_CODE;
-
-      //Reserved for future purposes
-      keep soft addr not in AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02;
 
       //10-bit slave addressing
       keep soft addr not in AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING;

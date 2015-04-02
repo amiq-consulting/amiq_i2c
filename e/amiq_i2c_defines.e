@@ -63,12 +63,7 @@ package amiq_i2c;
 
 #ifndef AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID {
 	//addresses reserved for device ID
-	#define AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID [7'b1111_100];
-};
-
-#ifndef AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02 {
-	//addresses reserved for future purposes
-	#define AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02 [7'b1111_100, 7'b1111_101, 7'b1111_110, 7'b1111_111];
+	#define AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID [7'b1111_100, 7'b1111_101, 7'b1111_110, 7'b1111_111];
 };
 
 #ifndef AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING {

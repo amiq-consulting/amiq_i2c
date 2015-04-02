@@ -400,19 +400,16 @@ extend amiq_i2c_bus_monitor_u {
 				result = CBUS_ADDR;
 			}
 			else if(a_i2c_byte[7:1] in AMIQ_I2C_RSVD_ADDR_FOR_DIFFERENT_BUS_FORMAT) {
-				result = RESERVED_01;
+				result = DIFFERENT_BUS_FORMAT;
 			}
 			else if(a_i2c_byte[7:1] in AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_01) {
-				result = RESERVED_02;
+				result = FUTURE_USE_01;
 			}
 			else if(a_i2c_byte[7:1] in AMIQ_I2C_RSVD_ADDR_FOR_HS_MODE_MASTER_CODE) {
 				result = HS_MASTER_CODE;
 			}
 			else if(a_i2c_byte[7:1] in AMIQ_I2C_RSVD_ADDR_FOR_DEVICE_ID) {
 				result = DEVICE_ID;
-			}
-			else if(a_i2c_byte[7:1] in AMIQ_I2C_RSVD_ADDR_FOR_FUTURE_USE_02) {
-				result = RESERVED_03;
 			}
 			else if(a_i2c_byte[7:1] in AMIQ_I2C_RSVD_ADDR_FOR_10_BIT_SLAVE_ADDRESSING) {
 				result = NORMAL_10BITS;
